@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duration Capital Partners — Capital Formation Notes</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #D4B05A;
+  --gold-light: #F0D58A;
+  --gold-pale: #F8EBC8;
+  --gold-dark: #9B7820;
+  --gold-glow: rgba(212,176,90,0.07);
+  --navy: #0C1A27;
+  --navy-mid: #142231;
+  --navy-light: #1E3349;
+  --navy-deep: #060E18;
+  --off-white: #F5F0E6;
+  --cream: #EDE8DC;
+  --text-body: #E4DCC9;
+  --text-light: #D4C8B5;
+  --text-muted: #B8C2CF;
+  --rule: rgba(212,176,90,0.25);
+  --rule-faint: rgba(212,176,90,0.12);
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Montserrat', 'Helvetica Neue', sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background: var(--navy);
+  color: var(--text-body);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 1.7;
+}
+.page-header { background: var(--navy-deep); border-bottom: 1px solid var(--rule); padding: 0 64px; }
+.header-top { display: flex; align-items: center; justify-content: space-between; padding: 26px 0 22px; border-bottom: 1px solid var(--rule-faint); }
+.logo-group { display:flex; align-items:center; gap:14px; }
+.logo-diamond { width:30px; height:30px; background: var(--gold); transform: rotate(45deg); flex-shrink:0; position:relative; }
+.logo-diamond::after { content:''; position:absolute; inset:5px; background: var(--navy-deep); }
+.firm-name { font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); }
+.firm-sub { font-family: var(--font-sans); font-size: 9px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-top:3px; }
+.header-meta { font-family: var(--font-sans); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); text-align: right; line-height: 1.8; }
+.hero { text-align: center; padding: 50px 0 36px; }
+.hero-eyebrow { font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+.hero-title { font-family: var(--font-display); font-size: 54px; font-weight: 300; line-height: 1.1; color: var(--off-white); margin-bottom: 12px; }
+.hero-title em { font-style:italic; color: var(--gold-light); }
+.hero-subtitle { font-family: var(--font-display); font-size: 19px; font-weight: 300; font-style: italic; color: var(--text-light); margin-bottom: 26px; max-width:720px; margin-left:auto; margin-right:auto; }
+.gold-rule { width:50px; height:1px; background:var(--gold); margin:0 auto; }
+.from-to { display:flex; justify-content:center; gap:44px; margin-top:28px; padding-top:22px; border-top: 1px solid var(--rule-faint); }
+.ft-block { text-align:center; }
+.ft-label { font-family: var(--font-sans); font-size:9px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:var(--text-muted); margin-bottom:6px; }
+.ft-name { font-family: var(--font-display); font-size:18px; color:var(--off-white); font-weight:400; }
+.ft-sub { font-family: var(--font-sans); font-size:10px; color:var(--text-muted); margin-top:2px; }
+.nav-bar { display:flex; align-items:center; justify-content:center; border-top: 1px solid var(--rule-faint); background: rgba(6,14,24,0.5); flex-wrap: wrap; }
+.nav-item { font-family: var(--font-sans); font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); padding: 13px 18px; border-right: 1px solid var(--rule-faint); }
+.nav-item:first-child { border-left: 1px solid var(--rule-faint); }
+.nav-item.active { color: var(--gold); }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 64px; }
+.section { padding: 56px 0; border-bottom: 1px solid var(--rule-faint); }
+.section:last-child { border-bottom: none; }
+.section-label { font-family: var(--font-sans); font-size: 9px; font-weight: 600; letter-spacing: 0.36em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.section-title { font-family: var(--font-display); font-size: 38px; font-weight: 300; line-height: 1.15; color: var(--off-white); margin-bottom: 14px; }
+.section-title em { font-style:italic; color: var(--gold-light); }
+.body-text { font-family: var(--font-sans); font-size: 13px; font-weight: 400; color: var(--text-body); line-height: 1.85; margin-bottom: 18px; }
+.body-text strong { color: var(--off-white); font-weight: 600; }
+.h3 { font-family: var(--font-display); font-size: 24px; font-weight: 400; color: var(--off-white); margin: 28px 0 14px; }
+.h4 { font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin: 24px 0 12px; }
+.callout { background: var(--gold-glow); border: 1px solid var(--rule); border-left: 3px solid var(--gold); padding: 22px 28px; margin: 28px 0; }
+.callout-text { font-family: var(--font-display); font-size: 19px; font-weight: 300; font-style: italic; color: var(--gold-light); line-height: 1.55; }
+.pillar { display:grid; grid-template-columns: 64px 1fr; gap: 0; background: var(--navy-mid); border: 1px solid var(--rule); margin-bottom: 14px; }
+.pillar-num { background: var(--navy-light); border-right: 1px solid var(--rule); display:flex; align-items:center; justify-content:center; padding: 22px 0; }
+.pillar-num span { font-family: var(--font-display); font-size: 32px; font-weight: 300; color: var(--gold); line-height:1; }
+.pillar-content { padding: 22px 26px; }
+.pillar-title { font-family: var(--font-display); font-size: 20px; font-weight: 400; color: var(--off-white); margin-bottom: 8px; }
+.pillar-body { font-family: var(--font-sans); font-size: 13px; font-weight: 400; color: var(--text-body); line-height:1.85; }
+.pillar-body strong { color: var(--off-white); font-weight: 600; }
+.tier-header { display:flex; align-items:flex-end; gap: 20px; margin: 36px 0 24px; padding-bottom: 16px; border-bottom: 1px solid var(--rule-faint); }
+.tier-num { font-family: var(--font-display); font-size: 64px; font-weight: 300; color: rgba(212,176,90,0.18); line-height:1; flex-shrink:0; }
+.tier-tag { font-family: var(--font-sans); font-size: 9px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+.tier-title { font-family: var(--font-display); font-size: 28px; font-weight: 400; color: var(--off-white); }
+.tier-desc { font-family: var(--font-display); font-size: 14px; font-style:italic; color: var(--text-light); margin-top:4px; }
+.investor-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-bottom: 14px; }
+.investor-grid.two-col { grid-template-columns: repeat(2,1fr); }
+.investor-card { background: var(--navy-mid); padding: 22px 20px; position:relative; }
+.investor-card.push::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background: var(--gold); }
+.investor-card.plant::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background: var(--text-muted); opacity:0.5; }
+.inv-name { font-family: var(--font-display); font-size: 18px; font-weight: 400; color: var(--off-white); margin-bottom: 4px; line-height:1.2; }
+.inv-geo { font-family: var(--font-sans); font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.inv-desc { font-family: var(--font-sans); font-size: 12px; font-weight: 400; color: var(--text-body); line-height:1.7; }
+.inv-desc strong { color: var(--off-white); font-weight:600; }
+.inv-angle { font-family: var(--font-display); font-size: 13px; font-style:italic; color: var(--gold-light); margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--rule-faint); line-height:1.5; }
+.inv-badge { display:inline-block; font-family: var(--font-sans); font-size: 8px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; padding: 3px 8px; margin-top: 10px; }
+.inv-badge.push { color: var(--gold-light); background: rgba(212,176,90,0.15); border: 1px solid rgba(212,176,90,0.35); }
+.inv-badge.plant { color: var(--text-muted); background: rgba(184,194,207,0.08); border: 1px solid rgba(184,194,207,0.25); }
+.domino-block { background: var(--navy-mid); border: 1px solid var(--rule); margin-bottom: 14px; }
+.domino-header { display:flex; align-items:center; gap:14px; padding: 18px 24px; border-bottom: 1px solid var(--rule-faint); background: rgba(30,51,73,0.5); }
+.domino-icon { width: 8px; height: 8px; background: var(--gold); transform:rotate(45deg); flex-shrink:0; }
+.domino-lp { font-family: var(--font-display); font-size: 21px; font-weight: 400; color: var(--gold-light); }
+.domino-type { font-family: var(--font-sans); font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-left:auto; }
+.domino-body { padding: 20px 24px; }
+.domino-row { display:grid; grid-template-columns: 130px 1fr; gap: 14px; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--rule-faint); align-items:start; }
+.domino-row:last-child { margin-bottom:0; padding-bottom:0; border-bottom:none; }
+.domino-row-label { font-family: var(--font-sans); font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); padding-top:3px; }
+.domino-row-content { font-family: var(--font-sans); font-size: 12px; font-weight: 400; color: var(--text-body); line-height:1.75; }
+.domino-row-content strong { color: var(--off-white); font-weight: 600; }
+.consultant-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); margin-bottom:14px; }
+.consultant-grid.four-col { grid-template-columns: repeat(4,1fr); }
+.consultant-card { background: var(--navy-mid); padding:22px 20px; }
+.cons-name { font-family: var(--font-display); font-size:18px; font-weight:400; color: var(--off-white); margin-bottom:4px; }
+.cons-type { font-family: var(--font-sans); font-size:9px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color: var(--gold); margin-bottom:10px; }
+.cons-desc { font-family: var(--font-sans); font-size:12px; font-weight:400; color: var(--text-body); line-height:1.75; }
+.timeline { position:relative; padding-left:38px; }
+.timeline::before { content:''; position:absolute; left:0; top:8px; bottom:8px; width:1px; background: var(--rule); }
+.tl-item { position:relative; margin-bottom:28px; }
+.tl-item::before { content:''; position:absolute; left:-44px; top:5px; width:10px; height:10px; background: var(--navy); border: 1.5px solid var(--gold); transform: rotate(45deg); }
+.tl-item.milestone::before { background: var(--gold); width:14px; height:14px; left:-46px; top:3px; }
+.tl-date { font-family: var(--font-sans); font-size:9px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color: var(--gold); margin-bottom:4px; }
+.tl-title { font-family: var(--font-display); font-size:19px; font-weight:400; color: var(--off-white); margin-bottom:6px; }
+.tl-body { font-family: var(--font-sans); font-size:12px; font-weight:400; color: var(--text-body); line-height:1.8; }
+.tl-body strong { color: var(--off-white); font-weight:600; }
+.legend { display:flex; gap:24px; margin-bottom:20px; align-items:center; flex-wrap:wrap; }
+.legend-item { display:flex; align-items:center; gap:8px; }
+.legend-bar { width:24px; height:3px; }
+.legend-bar.push { background: var(--gold); }
+.legend-bar.plant { background: var(--text-muted); opacity:0.5; }
+.legend-label { font-family: var(--font-sans); font-size:9px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color: var(--text-muted); }
+.ph-block { background: linear-gradient(160deg, var(--navy-light) 0%, var(--navy-mid) 100%); border: 1px solid var(--rule); padding: 28px 32px; margin: 24px 0; }
+.ph-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items:start; }
+.ph-side h4 { font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.ph-side p { font-family: var(--font-sans); font-size: 12px; color: var(--text-body); line-height: 1.8; }
+.closing { background: var(--navy-deep); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 50px 64px; text-align: center; }
+.tab-panel .closing { margin: 36px -64px 0; }
+.closing-title { font-family: var(--font-display); font-size: 36px; font-weight:300; color: var(--off-white); margin-bottom: 14px; line-height:1.2; }
+.closing-title em { font-style:italic; color: var(--gold-light); }
+.closing-body { font-family: var(--font-display); font-size:17px; font-weight:300; font-style:italic; color: var(--text-light); max-width:680px; margin:0 auto 0; line-height:1.6; }
+.page-footer { background: var(--navy-deep); padding: 24px 64px; display:flex; align-items:center; justify-content:space-between; border-top: 1px solid var(--rule-faint); }
+.footer-note { font-family: var(--font-sans); font-size:10px; color: var(--text-muted); letter-spacing:0.1em; line-height:1.7; }
+.footer-conf { font-family: var(--font-sans); font-size:9px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color: var(--gold); border: 1px solid rgba(212,176,90,0.4); padding: 6px 14px; }
+.note { font-family: var(--font-sans); font-size:11px; color: var(--text-muted); font-style:italic; margin-top:10px; line-height:1.6; }
+ul.clean { list-style: none; padding-left: 0; margin-bottom: 18px; }
+ul.clean li { font-family: var(--font-sans); font-size:13px; color:var(--text-body); padding: 6px 0 6px 18px; position:relative; line-height:1.7; }
+ul.clean li::before { content:'\25C6'; position:absolute; left:0; color: var(--gold); font-size:8px; top:11px; }
+ul.clean li strong { color: var(--off-white); font-weight: 600; }
+ul.clean li em { color: var(--gold-light); font-style:italic; font-family: var(--font-display); font-size:14px; }
+
+/* TABS */
+.tab-nav { display:flex; align-items:center; justify-content:center; border-top: 1px solid var(--rule-faint); background: rgba(6,14,24,0.5); flex-wrap: wrap; }
+.tab-btn {
+  font-family: var(--font-sans); font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--text-muted); padding: 14px 18px; border: none; background: transparent; cursor: pointer;
+  border-right: 1px solid var(--rule-faint); border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.tab-btn:first-child { border-left: 1px solid var(--rule-faint); }
+.tab-btn:hover { color: var(--gold-light); background: rgba(212,176,90,0.05); }
+.tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); background: rgba(212,176,90,0.08); }
+.tab-btn .tab-num { display:block; font-size:8px; color:var(--gold-dark); margin-bottom:3px; font-weight:500; letter-spacing:0.15em; }
+.tab-btn.active .tab-num { color: var(--gold); }
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: fadeIn 0.3s ease-in; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Sub-nav for Family Offices regional tabs */
+.sub-nav { display:flex; gap:0; margin: 16px 0 28px; border: 1px solid var(--rule); background: var(--navy-mid); flex-wrap:wrap; }
+.sub-btn {
+  flex:1; min-width: 120px; font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--text-muted); padding: 12px 14px; border: none; background: transparent; cursor: pointer;
+  border-right: 1px solid var(--rule-faint); transition: all 0.2s;
+}
+.sub-btn:last-child { border-right: none; }
+.sub-btn:hover { color: var(--gold-light); background: rgba(212,176,90,0.05); }
+.sub-btn.active { color: var(--gold-light); background: rgba(212,176,90,0.12); }
+.sub-panel { display: none; }
+.sub-panel.active { display: block; }
+
+/* HORIZON PLANNING */
+.horizon-intro { font-family: var(--font-display); font-size: 18px; font-style:italic; color: var(--text-light); max-width: 780px; margin-bottom:32px; line-height:1.65; }
+.horizon-grid { display:grid; grid-template-columns: 180px 1fr; gap:0; margin-bottom: 18px; border: 1px solid var(--rule); background: var(--navy-mid); }
+.horizon-left {
+  background: linear-gradient(160deg, var(--navy-light) 0%, var(--navy-mid) 100%);
+  padding: 26px 22px; border-right: 1px solid var(--rule);
+  display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;
+}
+.horizon-when { font-family: var(--font-display); font-size: 32px; font-weight:400; color: var(--gold-light); line-height:1; margin-bottom:6px; }
+.horizon-when em { font-style:italic; }
+.horizon-phase { font-family: var(--font-sans); font-size: 9px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color: var(--gold); }
+.horizon-right { padding: 24px 28px; }
+.horizon-title { font-family: var(--font-display); font-size: 22px; font-weight:400; color: var(--off-white); margin-bottom: 8px; }
+.horizon-title em { font-style:italic; color: var(--gold-light); }
+.horizon-sub { font-family: var(--font-display); font-size: 14px; font-style:italic; color: var(--text-light); margin-bottom: 14px; }
+.horizon-body { font-family: var(--font-sans); font-size: 13px; font-weight:400; color: var(--text-body); line-height:1.8; margin-bottom: 14px; }
+.horizon-body strong { color: var(--off-white); font-weight:600; }
+.horizon-checklist { list-style:none; padding-left:0; margin: 10px 0 4px; display:grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
+.horizon-checklist li { font-family: var(--font-sans); font-size:12px; color: var(--text-body); padding: 4px 0 4px 18px; position:relative; line-height:1.6; }
+.horizon-checklist li::before { content: '\25A1'; position:absolute; left:0; color: var(--gold); font-size:10px; top:5px; }
+.horizon-checklist li strong { color: var(--off-white); font-weight:600; }
+.horizon-checklist.wide { grid-template-columns: 1fr; }
+
+.phase-divider {
+  display:flex; align-items:center; gap:16px; margin: 40px 0 24px; padding-bottom:14px; border-bottom: 1px solid var(--rule-faint);
+}
+.phase-divider-label { font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); }
+.phase-divider-title { font-family: var(--font-display); font-size: 24px; font-weight:400; color: var(--off-white); }
+.phase-divider-title em { font-style: italic; color: var(--gold-light); }
+
+.metric-strip { display:grid; grid-template-columns: repeat(3,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); margin: 16px 0 20px; }
+.metric-cell { background: var(--navy); padding: 16px 18px; }
+.metric-label { font-family: var(--font-sans); font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+.metric-value { font-family: var(--font-display); font-size: 16px; color: var(--off-white); line-height:1.3; }
+.metric-value em { font-style:italic; color: var(--gold-light); }
+
+@media (max-width: 820px) {
+  .horizon-grid { grid-template-columns: 1fr; }
+  .horizon-left { border-right: none; border-bottom: 1px solid var(--rule); padding: 18px 22px; }
+  .horizon-checklist { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <div class="header-top">
+    <div class="logo-group">
+      <div class="logo-diamond"></div>
+      <div>
+        <div class="firm-name">Duration Capital Partners</div>
+        <div class="firm-sub">Operating Partner Memo &middot; Capital Formation</div>
+      </div>
+    </div>
+    <div class="header-meta">Working Draft<br>April 2026<br>Confidential</div>
+  </div>
+  <div class="hero">
+    <div class="hero-eyebrow">Capital Formation Notes</div>
+    <h1 class="hero-title">Building <em>What</em><br>Comes Next</h1>
+    <p class="hero-subtitle">Notes for our discussion on how to organize the next phase of capital formation across TIF II, TCIP, and co-invests</p>
+    <div class="from-to">
+      <div class="ft-block"><div class="ft-label">From</div><div class="ft-name">Dennis</div><div class="ft-sub">Geneva</div></div>
+      <div class="ft-block"><div class="ft-label">To</div><div class="ft-name">Emmett &amp; Josh</div><div class="ft-sub">NYC &middot; Montecito</div></div>
+    </div>
+  </div>
+  <nav class="tab-nav" id="tabNav">
+    <button class="tab-btn active" data-tab="tab-frame"><span class="tab-num">I</span>Frame</button>
+    <button class="tab-btn" data-tab="tab-ph"><span class="tab-num">II</span>Park Hill</button>
+    <button class="tab-btn" data-tab="tab-lp"><span class="tab-num">III</span>LP Domino</button>
+    <button class="tab-btn" data-tab="tab-fo"><span class="tab-num">IV</span>Family Offices</button>
+    <button class="tab-btn" data-tab="tab-inst"><span class="tab-num">V</span>Institutional</button>
+    <button class="tab-btn" data-tab="tab-halo"><span class="tab-num">VI</span>Portfolio Halo</button>
+    <button class="tab-btn" data-tab="tab-cons"><span class="tab-num">VII</span>Consultants</button>
+    <button class="tab-btn" data-tab="tab-exec"><span class="tab-num">VIII</span>Execution</button>
+    <button class="tab-btn" data-tab="tab-horizon"><span class="tab-num">IX</span>Horizon</button>
+  </nav>
+</header>
+
+<div class="wrap">
+
+<div class="tab-panel active" id="tab-frame">
+<section class="section">
+  <div class="section-label">Section I &mdash; Frame</div>
+  <h2 class="section-title">How I'm <em>thinking</em> about this</h2>
+  <p class="body-text">After meeting with Josh in Montecito and multiple meetings and discussions with Emmett over the past 6 months or more &mdash; plus a bit of help on his recent trip to Australia &mdash; the question that excites me most is: how can I help you both shape and expand Duration's next chapter? You've built a remarkable franchise; the question now is how the three of us take it forward together. Capital Formation is the most immediate piece of that work, and the note below is how I'd propose the three of us think about organizing it &mdash; the vehicles, the LP universes, and the cadence &mdash; with Nate and the current internal IR team in support, and in conjunction perhaps with external resources where specific markets or use cases call for them.</p>
+
+  <p class="body-text">Three vehicles to think about in parallel &mdash; TIF II, TCIP (or its successor structure), and the co-invest channel &mdash; and three distinct LP universes that map to each. But it is important to note, especially with FOs, that you can't predict exactly which of these three structures (or combination of one or more) might appeal to each family &mdash; so the conversation needs to stay flexible and present the full menu rather than pre-sort each FO into a single bucket.</p>
+  <p class="body-text">A few framing points before the lists.</p>
+  <p class="body-text"><strong>TIF I has 32 LPs.</strong> That's a small base relative to a $4.9bn franchise. The institutional headroom for TIF II is real, and a lot of it sits in places PH covers well &mdash; but a lot of it also sits in places PH doesn't naturally reach: family offices with institutional-scale checks, sovereign-adjacent FOs, and the Asia and Middle East FO universe where I have direct relationships.</p>
+  <p class="body-text"><strong>TCIP is the FO vehicle.</strong> The deck literally says "invest alongside family and pension fund owners." 10+ year holds, 3&ndash;5% cash yield, perpetual capital structure &mdash; that's a family office product. The institutional consultants will gravitate to TIF II's closed-end format. The FO channel is where TCIP grows, and that's where I lead.</p>
+  <p class="body-text"><strong>Co-invest is the gateway.</strong> Watco, Ports America, Mainstay &mdash; every FO conversation I'd have starts with "would you like to look at a single deal first" before fund commitments. The co-invest channel feeds TCIP, and TCIP commitments lead to TIF II conversations.</p>
+  <div class="callout">
+    <div class="callout-text">"In terms of Capital Formation, a key aspect of my Operating Partner role will be as a strategic thought partner with both of you on LPs and how to best approach them, to open the doors my network can open, and then to work closely with Nate and the internal IR team to manage the pipeline end-to-end &mdash; bringing each of you in where your presence can make the most difference."</div>
+  </div>
+
+  <div class="closing">
+    <h2 class="closing-title">A note on <em>working together</em></h2>
+    <p class="closing-body">This is a draft and most of it will change after we talk. The point is to get a structure on paper so the three of us are working from the same map &mdash; honest about where my network adds the most, where the existing IR team is the better-placed channel, and where PH might or might not earn its fee, or where other external resources might be needed to augment what we can do internally. The bigger picture is what Duration becomes over the next decade, and how I can come in and play an additive role to both of you in the continued evolution of the firm you've created.</p>
+  </div>
+</section>
+</div>
+
+<div class="tab-panel" id="tab-ph">
+<section class="section">
+  <div class="section-label">Section II &mdash; Park Hill</div>
+  <h2 class="section-title">The <em>Park Hill</em> question</h2>
+  <p class="body-text">As I understand it, the EL with PH may not yet be signed &mdash; though it's possible the decision has already been made on your end without my involvement, which is entirely fine. Either way, in my opinion this is a decision that should be settled within the next month or so, because the answer shapes everything downstream &mdash; my role, IR resourcing, the consultant outreach plan, and where the dollars get spent over the next 18 months. The notes below are my honest read of the trade-off, offered as input rather than as advocacy in either direction.</p>
+  <div class="ph-block">
+    <div class="ph-grid">
+      <div class="ph-side">
+        <h4>What PH does well</h4>
+        <p>PH has direct coverage relationships with the major US/Canadian pensions, Korean and Japanese institutionals, and the European LPs that allocate via consultants. Their team builds the meeting calendar, manages diligence requests, and runs the standard process work that absorbs IR bandwidth. For a first independent fund post-spin from Oaktree, PH provides institutional cover and a clear playbook.</p>
+      </div>
+      <div class="ph-side">
+        <h4>Where the question opens up</h4>
+        <p>PH books meetings; PH does not write checks. Decision-makers sit at the LPs. On a $1.5bn raise, PH economics are roughly $30m. Duration is $4.9bn AUM with an existing IR team (Nate Quinn full-time on IR, Will Frew supporting, plus the broader senior team). The question is whether $30m buys enough incremental AUM commitments that would not otherwise close on our own and that amount to more than $30m in fees down the road, or whether a portion of that economic value can be captured internally with senior-led process management.</p>
+      </div>
+    </div>
+  </div>
+  <p class="body-text">No view from me on the answer &mdash; but the implications for how I'd organize my work look different in each case:</p>
+  <div class="pillar">
+    <div class="pillar-num"><span>A</span></div>
+    <div class="pillar-content">
+      <div class="pillar-title">If PH is engaged</div>
+      <div class="pillar-body">My role is complementary and additive &mdash; focused on the FO universe (US, ME, Asia, EU) and the consultant relationships PH does not own. The three of us would shape how the TCIP/co-invest channel runs as primary, and I'd take the lead on supplying incremental TIF II capital from sources PH would not naturally reach. Clear LP-by-LP carve-up between PH and us to avoid overlap or LP confusion.</div>
+    </div>
+  </div>
+  <div class="pillar">
+    <div class="pillar-num"><span>B</span></div>
+    <div class="pillar-content">
+      <div class="pillar-title">If PH is not engaged</div>
+      <div class="pillar-body">My role is broader. The three of us would together shape and expand Duration's institutional outreach process &mdash; building on what you've already established, scaling the existing IR team's coverage, managing the consultant-led institutional channels (StepStone, Albourne, Hamilton Lane, Mercer), and adding the FO and HNW channels where my network is the natural fit. The IR team likely needs one or two additions over time, but the economics of internal-led vs. PH-led look very different on a 12&ndash;18 month process &mdash; and the institutional muscle Duration builds in the process is a permanent asset for every fund that follows.</div>
+    </div>
+  </div>
+  <p class="body-text">Worth treating as a real fork in the road, not a default. Happy to go deeper in person. The lists below work either way.</p>
+</section>
+</div>
+
+<div class="tab-panel" id="tab-lp">
+<section class="section">
+  <div class="section-label">Section III &mdash; Institutional Strategy</div>
+  <h2 class="section-title">The <em>LP Domino</em> map</h2>
+  <p class="body-text">TIF I has a high-quality but concentrated LP base. The fastest path to TIF II institutional capital is to build outward from your existing LPs &mdash; using peer relationships, geographic clusters, and the post-Ports America CPPIB story to identify the LPs most likely to take the meeting because someone they respect is already in.</p>
+  <h3 class="h3">Existing TIF I anchors I'd build outward from</h3>
+
+  <div class="domino-block">
+    <div class="domino-header"><div class="domino-icon"></div><div class="domino-lp">ADIA</div><div class="domino-type">SWF &mdash; Abu Dhabi</div></div>
+    <div class="domino-body">
+      <div class="domino-row"><div class="domino-row-label">Peer SWFs</div><div class="domino-row-content"><strong>Mubadala, ADQ, QIA, PIF, Kuwait Investment Authority, Bahrain Mumtalakat.</strong> Per Infrastructure Investor's GI 75 ranking, ADIA leads global infra LPs at ~$48bn allocated. Mubadala and ADQ in Abu Dhabi follow ADIA's GP selections closely. PIF's infra appetite has scaled rapidly post-Vision 2030.</div></div>
+      <div class="domino-row"><div class="domino-row-label">FO followers</div><div class="domino-row-content">Gulf merchant family FOs &mdash; <strong>Al Nahyan, Al Ghurair, Al Nowais, Al Habtoor, Al Futtaim, Olayan, Mansour Group</strong>. Many maintain informal relationships with ADIA investment staff. Approach via a Dubai/Abu Dhabi trip, not cold outreach.</div></div>
+      <div class="domino-row"><div class="domino-row-label">Approach</div><div class="domino-row-content">Never cite ADIA by name without permission. Reference "leading Middle Eastern sovereign investors" as part of the LP base. Ask Emmett's existing ADIA relationship manager whether they'd be open to a soft introduction to a Mubadala or ADQ counterpart.</div></div>
+    </div>
+  </div>
+
+  <div class="domino-block">
+    <div class="domino-header"><div class="domino-icon"></div><div class="domino-lp">GIC</div><div class="domino-type">SWF &mdash; Singapore</div></div>
+    <div class="domino-body">
+      <div class="domino-row"><div class="domino-row-label">Peer SWFs</div><div class="domino-row-content"><strong>Temasek</strong> (Singapore), <strong>NZ Super, Future Fund</strong> (Australia), <strong>Khazanah</strong> (Malaysia), <strong>NPS</strong> (Korea), <strong>JBIC / GPIF</strong> (Japan). NPS is a $20bn+ infra allocator. CIC is technically a peer but likely off-limits given current geopolitics.</div></div>
+      <div class="domino-row"><div class="domino-row-label">Australia link</div><div class="domino-row-content">The Sydney/Melbourne FO meetings during Emmett's trip already established proof of concept. Future Fund's infra prominence helps the GIC story land with Australian super funds &mdash; <strong>AustralianSuper, AwareSuper, Hostplus, UniSuper, Cbus</strong> &mdash; all material infra allocators.</div></div>
+      <div class="domino-row"><div class="domino-row-label">Asia FO ripple</div><div class="domino-row-content">Singapore-based FOs follow GIC and Temasek into managers. SE Asian families with Singapore holding structures, and others based in HK or locally in their own region. Through my work with the SharkNinja chairman, my network in HK/Asia (covered in the FO section) has expanded.</div></div>
+    </div>
+  </div>
+
+  <div class="domino-block">
+    <div class="domino-header"><div class="domino-icon"></div><div class="domino-lp">APG</div><div class="domino-type">Pension Asset Manager &mdash; Netherlands</div></div>
+    <div class="domino-body">
+      <div class="domino-row"><div class="domino-row-label">Peer EU pensions</div><div class="domino-row-content"><strong>PGGM</strong> (the other major Dutch pension manager), <strong>ATP</strong> (Denmark), <strong>AP funds</strong> (Sweden &mdash; AP1 through AP7), <strong>Varma &amp; Ilmarinen</strong> (Finland), <strong>BVK / Publica</strong> (Switzerland public pensions). EU pensions cluster tightly on manager selection &mdash; APG's presence is meaningful peer-group signal.</div></div>
+      <div class="domino-row"><div class="domino-row-label">EU insurers</div><div class="domino-row-content"><strong>Allianz Capital Partners</strong> (runs $17bn+ infra), <strong>AXA, Generali, Aviva, NN Group, Aegon, Talanx, Munich Re, Swiss Re.</strong> Most European insurers have built dedicated infra allocations under Solvency II treatment.</div></div>
+      <div class="domino-row"><div class="domino-row-label">Approach</div><div class="domino-row-content">APG referenceability is significant in the Dutch and Nordic communities. Worth a coordinated Amsterdam/Copenhagen/Stockholm trip with Emmett or Josh after the institutional materials are refreshed.</div></div>
+    </div>
+  </div>
+
+  <div class="domino-block">
+    <div class="domino-header"><div class="domino-icon"></div><div class="domino-lp">Washington / Michigan / CalSTRS</div><div class="domino-type">US Public Pensions</div></div>
+    <div class="domino-body">
+      <div class="domino-row"><div class="domino-row-label">US pension peers</div><div class="domino-row-content"><strong>Oregon PERS, Ohio STRS, Florida SBA, Virginia Retirement, Texas TRS, Illinois Teachers, Colorado PERA, Pennsylvania PSERS, Maryland State Retirement, NYC Comptroller systems (NYCERS, TRS, Police, Fire, BERS).</strong> Most maintain meaningful infra allocations and typically follow each other into proven North American infra managers.</div></div>
+      <div class="domino-row"><div class="domino-row-label">Canadian pensions</div><div class="domino-row-content"><strong>CPPIB</strong> ($37bn infra) &mdash; existing Ports America counterparty, the most natural relationship to deepen. <strong>La Caisse / CDPQ</strong> ($44bn infra, top-ranked among pensions globally), <strong>OTPP, OMERS, HOOPP, BCI, OPTrust, PSP, AIMCo.</strong> Canadian pensions are the most sophisticated infra LP community globally.</div></div>
+      <div class="domino-row"><div class="domino-row-label">US endowments</div><div class="domino-row-content"><strong>Yale, MIT, Stanford, Duke, Princeton, Notre Dame, Northwestern, Penn, Texas UTIMCO</strong> at the top tier. My direct relationships at <strong>NYU and Columbia</strong> are the natural entry point. Cambridge Associates is the consultant gateway for endowment commitments.</div></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="tab-panel" id="tab-fo">
+<section class="section">
+  <div class="section-label">Section IV &mdash; Family Offices</div>
+  <h2 class="section-title">The <em>FO</em> universe</h2>
+  <p class="body-text">A note on what I bring before the lists. Over the past 20+ years I've developed deep relationships across each of the regions below &mdash; relationships that have aged into the right places. In the <strong>Middle East</strong>, the people I've known for decades are now leading their countries (UAE at the "White House" level, Al Sabah families in Kuwait), running the major commercial groups (<strong>Al Futtaim, Al Shaya</strong>), and overseeing the largest pools of capital in the region (at <strong>Mubadala</strong> and across the major family offices). In the <strong>UK, EU, and Switzerland</strong>, the relationships are predominantly with the families behind major liquidity events who now run substantial SFOs or MFOs &mdash; <strong>Bertarelli, Rupert, Rimer</strong> and others in Switzerland; <strong>Cortina, Koplowitz</strong> in Madrid; <strong>Peugeot, Dassault</strong> in France; <strong>Elkann, Recordati, Giuliani</strong> in Italy; <strong>David and Leventis</strong> (Coca-Cola HBC controlling families, UK-resident); and equivalent networks across the rest of the EU. <strong>Australia</strong> is similar &mdash; we only scratched the surface on Emmett's recent trip. I have strong existing relationships with two of the largest FOs (including Lowy) and direct connectivity to three or four others whose wealth comes from infrastructure and energy. And <strong>Latin America</strong> is a distinct channel I haven't yet talked much about &mdash; deep direct relationships across Panama (<strong>Motta</strong> family as anchor), Venezuela (diaspora capital), Brazil, Argentina, Chile, and Colombia (<strong>Santo Domingo</strong> and <strong>Echavarría</strong> as twin anchors), plus the Miami MFO universe that custodies much of this capital. Many of these families are infra-native by the nature of their underlying businesses and structurally US-dollar oriented.</p>
+  <p class="body-text">The list below is structured by region. Push = active outreach starting in the first 60 days. Plant = relationship build now, conversion when timing is right (often tied to a liquidity event or an allocation cycle).</p>
+  <p class="body-text">Every name has a "why now" &mdash; either a personal relationship I have, a known pool of recently-created liquidity, an obvious portfolio fit, or a structural reason the timing works. Names without all three I've filtered out.</p>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-bar push"></div><div class="legend-label">Push &mdash; active outreach</div></div>
+    <div class="legend-item"><div class="legend-bar plant"></div><div class="legend-label">Plant &mdash; cultivate</div></div>
+  </div>
+  <nav class="sub-nav" id="foSubNav">
+    <button class="sub-btn active" data-sub="fo-us">United States</button>
+    <button class="sub-btn" data-sub="fo-me">Middle East</button>
+    <button class="sub-btn" data-sub="fo-asia">Asia-Pacific</button>
+    <button class="sub-btn" data-sub="fo-au">Australia</button>
+    <button class="sub-btn" data-sub="fo-eu">Europe</button>
+    <button class="sub-btn" data-sub="fo-latam">Latin America</button>
+  </nav>
+
+
+  <div class="sub-panel active" id="fo-us">
+<div class="tier-header">
+    <div class="tier-num">01</div>
+    <div>
+      <div class="tier-tag">United States</div>
+      <div class="tier-title">US Family Offices</div>
+      <div class="tier-desc">My deepest cluster. Mix of direct personal relationships and warm-intro paths through known networks.</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Personal network &mdash; direct relationships</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Quadrant (Santo Domingo FO)</div>
+      <div class="inv-geo">New York</div>
+      <div class="inv-desc">Alejandro &mdash; relationship of decades. Quadrant is the Santo Domingo family office. Sophisticated alts allocation, post-liquidity-event capital. Confirmed overlap with the Morgan Stanley list. Likely already has infra exposure but Watco / Ports America story is differentiated.</div>
+      <div class="inv-angle">Decades-long relationship. Direct, fast.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Lowy Family Office</div>
+      <div class="inv-geo">New York / Sydney</div>
+      <div class="inv-desc">Westfield founders, NYC FO ops. Cross-pollinates with the Australia trip relationships. Real assets and long-duration mindset deeply familiar to this family.</div>
+      <div class="inv-angle">Australia momentum. Continue the build.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Stephen Robert &mdash; Miami MFO</div>
+      <div class="inv-geo">Miami</div>
+      <div class="inv-desc">Mentor relationship. $1bn+ SFO (former Oppenheimer CEO, Renaissance partner). Now part of a Miami MFO with peer FOs. Land-and-expand: one commitment opens the door to multiple pools.</div>
+      <div class="inv-angle">Land and expand. Multiple pools behind one door.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+  </div>
+
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Vista Founder FO</div>
+      <div class="inv-geo">Austin / NYC</div>
+      <div class="inv-desc">Robert Smith FO relationship. Vista is tech-concentrated; infra is a genuine diversifier. Existing relationship gives access for advice and potential allocation conversation.</div>
+      <div class="inv-angle">Tech-to-infra diversification pitch.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Pincus Family Office</div>
+      <div class="inv-geo">New York</div>
+      <div class="inv-desc">Multi-generational PE family wealth (Pincus family of Warburg Pincus heritage). The sons who inherited and now run their own FO are direct close relationships. Sophisticated alts process, infra-appropriate, and PE-fluent given the family background.</div>
+      <div class="inv-angle">Direct relationships at the principal level. PE-fluent.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">NYU &amp; Columbia Endowments</div>
+      <div class="inv-geo">New York</div>
+      <div class="inv-desc">Direct relationships at both. Endowments aren't FOs but behave similarly in the Duration context &mdash; sophisticated alts process, infra-curious. CalSTRS' presence is strong third-party validation.</div>
+      <div class="inv-angle">Direct relationships. CalSTRS validation helps.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Retired PE &amp; HF principals</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Tiger / Coatue alumni FOs</div>
+      <div class="inv-geo">NYC / globally</div>
+      <div class="inv-desc">Tech-concentrated personal balance sheets. Infra is genuinely uncorrelated to their daily exposure. Multiple known relationships in this group.</div>
+      <div class="inv-angle">Counterweight to their own positions.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Goldman / Fortress alumni</div>
+      <div class="inv-geo">NYC / various</div>
+      <div class="inv-desc">Goldman infra/credit alumni in particular have deep appreciation for the Duration approach. Many established SFO/MFO structures post-retirement.</div>
+      <div class="inv-angle">Asset class fluency. Easy conversations.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Retired Blackstone partners</div>
+      <div class="inv-geo">NYC / various</div>
+      <div class="inv-desc">Active BX infra partners are off-limits (conflict). Retired senior partners are excellent prospects but require careful mapping. Their personal capital is freed from BX in-house funds.</div>
+      <div class="inv-angle">Confirm retired status first. Then high conviction.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <h4 class="h4">RIA &amp; HNW channel</h4>
+
+  <div class="investor-grid two-col">
+    <div class="investor-card push">
+      <div class="inv-name">CAIS &mdash; platform for alts distribution to RIAs</div>
+      <div class="inv-geo">NYC &mdash; national reach</div>
+      <div class="inv-desc">Close relationship with <strong>Matt Brown</strong>, founder &amp; CEO of CAIS. I am someone he comes to for new fund / manager ideas to consider for the platform. CAIS reaches <strong>5,300+ advisor firms and teams</strong> &mdash; including a $30bn+ alts book across 84 Focus Financial partner RIAs, plus enterprise-level customizations with Advisor Group (10,100 advisors / $515bn AUM), William Blair, Northwestern Mutual, Truist, and RW Baird. Getting on CAIS is the single highest-leverage US distribution move available for the RIA/HNW channel &mdash; one platform approval reaches thousands of advisors at once, bypassing the need to build each RIA relationship individually. Mercer conducts the diligence on all funds listed, which is itself a strong external validation signal when talking to other LPs.</div>
+      <div class="inv-angle">Highest-leverage US distribution move. Direct founder relationship.</div>
+      <div class="inv-badge push">Push &mdash; early</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">East Coast RIAs (direct)</div>
+      <div class="inv-geo">NYC / East Coast</div>
+      <div class="inv-desc">Several ~$5bn AUM RIAs with dedicated alternatives teams &mdash; previously cultivated for BX's BXPE. They have the sophistication to evaluate Duration and the client base for meaningful aggregate commitments. Multi-FO RIAs in this segment each represent multiple underlying client families. Note: some of these names sit on CAIS and will see Duration there too &mdash; the direct relationship and the platform presence reinforce each other rather than compete.</div>
+      <div class="inv-angle">Already primed on alternatives. Complements CAIS.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+  </div>
+
+  <div class="investor-grid two-col">
+    <div class="investor-card plant">
+      <div class="inv-name">Tech founder FOs (recent exits)</div>
+      <div class="inv-geo">SV / NYC / globally</div>
+      <div class="inv-desc">Founders 2&ndash;4 years post-liquidity, building out FO structures, low/zero infra exposure. Co-invest entry point most natural before fund commitment. Multiple personal relationships to draw on.</div>
+      <div class="inv-angle">Co-invest first. Fund commitment follows.</div>
+      <div class="inv-badge push">Push (co-invest)</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Morgan Stanley FO list overlap</div>
+      <div class="inv-geo">Global &mdash; via MS</div>
+      <div class="inv-desc">MS has offered intros to FOs on their coverage list including Quadrant. Cross-reference exercise: names on both their list and my personal network are the highest-priority warm intros.</div>
+      <div class="inv-angle">Cross-reference for highest-priority intros.</div>
+      <div class="inv-badge push">Cross-reference</div>
+    </div>
+  </div>
+
+  <h4 class="h4">NYC legacy families &amp; real estate dynasties</h4>
+  <p class="body-text">A distinct cluster worth its own treatment. NYC's old-money families and real estate dynasties are unusually well-suited to TCIP and the long-duration infra story &mdash; many already have institutional-quality FO process, infra-adjacent business heritage, and a preference for assets they can hold for generations rather than fund-cycle exits.</p>
+  <div class="investor-grid">
+    <div class="investor-card plant">
+      <div class="inv-name">Tisch Family Office</div>
+      <div class="inv-geo">New York</div>
+      <div class="inv-desc">Loews / CBS post-liquidity capital. Dedicated FO team allocating to PE funds and co-invests. Profile fits TCIP. Need to identify warm-intro path.</div>
+      <div class="inv-angle">Profile fits TCIP exactly. Cultivate.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Rudin Family</div>
+      <div class="inv-geo">New York</div>
+      <div class="inv-desc">Multi-generational NYC real estate dynasty (Rudin Management Company). Substantial family wealth, institutional FO process, real-assets-native and naturally infra-receptive. The kind of family that thinks in 30-year holds &mdash; TCIP profile fit.</div>
+      <div class="inv-angle">Real-assets-native, generational mindset.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Other NYC RE families</div>
+      <div class="inv-geo">New York</div>
+      <div class="inv-desc"><strong>LeFrak, Resnick, Speyer (Tishman Speyer), Roth (Vornado), Durst, Fisher Brothers, Milstein, Silverstein, Zeckendorf.</strong> Large universe of multi-billion NYC RE-rooted FOs. Map systematically alongside the IR team &mdash; many have known, identifiable warm-intro paths through legal/banking advisors.</div>
+      <div class="inv-angle">Systematic mapping with the IR team.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Other US FOs worth targeting (researched)</h4>
+  <p class="body-text">Beyond the personal-network names above, the US FO universe with active alts allocation and infra appetite includes a tier worth systematic outreach &mdash; via the MS list, the IR team's network, and consultant referrals:</p>
+  <ul class="clean">
+    <li><strong>Walton Enterprises (Bentonville, AR)</strong> &mdash; the largest FO globally; diversified including infra-adjacent</li>
+    <li><strong>Cascade Investment (Bill Gates, Kirkland WA)</strong> &mdash; long-duration, infra and transportation exposure already</li>
+    <li><strong>Pritzker Group (Chicago)</strong> &mdash; Emmett already in conversation with them; sophisticated alts investor, transportation history (Hyatt, etc.)</li>
+    <li><strong>Soros Fund Management / Quantum Group (NYC)</strong> &mdash; institutional-quality FO process</li>
+    <li><strong>MSD Partners / Dell FO (NYC / Austin)</strong> &mdash; large alts allocator, infra-appropriate</li>
+    <li><strong>Rockefeller Capital Management</strong> &mdash; multi-family, dedicated alts platform</li>
+    <li><strong>BBR Partners, Tiedemann, Brown Brothers Harriman, Bessemer Trust</strong> &mdash; large MFOs with infra-appropriate client bases</li>
+    <li><strong>ICONIQ Capital (SF)</strong> &mdash; tech-founder MFO with growing infra interest</li>
+    <li><strong>Pictet North America, Lombard Odier US</strong> &mdash; FO desks for US clients (separate from Geneva entities)</li>
+  </ul>
+
+  </div>
+
+
+
+  <div class="sub-panel" id="fo-me">
+<div class="tier-header">
+    <div class="tier-num">02</div>
+    <div>
+      <div class="tier-tag">Middle East</div>
+      <div class="tier-title">Gulf &amp; MENA Family Offices</div>
+      <div class="tier-desc">28% average PE allocation across MENA FOs &mdash; higher than the global 22%. Infra appetite has accelerated post-Vision 2030.</div>
+    </div>
+  </div>
+
+  <h4 class="h4">UAE</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Al Nahyan / Royal Group</div>
+      <div class="inv-geo">Abu Dhabi</div>
+      <div class="inv-desc">Among the largest FO pools globally. Active in international PE and infra. Linked to Mubadala and ADQ via family. Relationships at the "White House" level in the UAE built over 20+ years &mdash; this is direct, not intermediated.</div>
+      <div class="inv-angle">Direct UAE leadership relationships. Push.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Al Habtoor Group</div>
+      <div class="inv-geo">Dubai</div>
+      <div class="inv-desc">$600m+ allocated annually to overseas investments per public reporting. Diversified, RE-heavy, infra-receptive. Active acquirer of US/UK assets.</div>
+      <div class="inv-angle">US-focused allocation already in place.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Al Futtaim Group</div>
+      <div class="inv-geo">Dubai</div>
+      <div class="inv-desc">Diversified merchant family. Auto, retail, real estate. Long-duration mindset, large pool, growing alts allocation. Direct relationship of long standing.</div>
+      <div class="inv-angle">Direct relationship. Push.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+  </div>
+
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Al Ghurair Investment</div>
+      <div class="inv-geo">Dubai</div>
+      <div class="inv-desc">Diversified industrial and commercial RE family. Global portfolio. Active in PE, infra-adjacent.</div>
+      <div class="inv-angle">Industrial-adjacent FO. Watco story lands well.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Al Nowais Investments</div>
+      <div class="inv-geo">Abu Dhabi</div>
+      <div class="inv-desc">Direct property and energy/infra holdings. The infra-native FOs in the region are the highest-priority targets.</div>
+      <div class="inv-angle">Already infra-allocating. Direct fit.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Al Shaya Group</div>
+      <div class="inv-geo">Dubai / Kuwait</div>
+      <div class="inv-desc">One of the major regional merchant families. Retail, hospitality, and investment platform across MENA. Direct relationship. Sophisticated FO function with growing international alts appetite.</div>
+      <div class="inv-angle">Direct relationship. Established business leadership in the region.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Saudi Arabia</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Olayan Group</div>
+      <div class="inv-geo">Riyadh / NYC</div>
+      <div class="inv-desc">One of the largest and oldest Gulf merchant family FOs. NY presence (Olayan America) makes them a natural US-product target. Long history of US institutional-quality allocations.</div>
+      <div class="inv-angle">US presence. Sophisticated, accessible.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">SEDCO Holding</div>
+      <div class="inv-geo">Jeddah</div>
+      <div class="inv-desc">Bin Mahfouz family. Sharia-compliant investing. Active in PE, RE, hospitality. Need to confirm Sharia-compatibility of TCIP/TIF II structures (likely workable).</div>
+      <div class="inv-angle">Sharia structure compatibility check first.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Al Rajhi Family</div>
+      <div class="inv-geo">Riyadh</div>
+      <div class="inv-desc">One of Saudi's largest family fortunes. Infra-receptive given KSA's Vision 2030 backdrop. Multiple FO vehicles &mdash; need precise mapping before approach.</div>
+      <div class="inv-angle">Map FO structure before outreach.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Kuwait &amp; Other Gulf</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Al Sabah families</div>
+      <div class="inv-geo">Kuwait City</div>
+      <div class="inv-desc">Direct relationships at the level of the country's leadership built over 20+ years. Al Sabah is the ruling family and the apex of Kuwait's wealth and political structure. The relationships here open doors to KIA-adjacent capital, Kuwait Investment Office (London), and the wider merchant family universe.</div>
+      <div class="inv-angle">Country-leadership relationships. The most senior door.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Kuwait merchant families</div>
+      <div class="inv-geo">Kuwait City</div>
+      <div class="inv-desc">Beyond Al Sabah: <strong>Al Sayer, Al Bahar, Behbehani, Al Ghanim families.</strong> Kuwait has a $160bn infrastructure backlog moving and the FO community is building US infra exposure. Often allocate alongside KIA.</div>
+      <div class="inv-angle">Smaller pools, sticky LPs once committed.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Al Quraishi (Anfal)</div>
+      <div class="inv-geo">KSA / Bahrain</div>
+      <div class="inv-desc">Active KSA FO with regional presence. Multi-asset including infra. Active speaker circuit at ME family office summits.</div>
+      <div class="inv-angle">Active and visible at ME FO events.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Liquidity-event &amp; cross-border FOs</h4>
+  <div class="investor-grid two-col">
+    <div class="investor-card plant">
+      <div class="inv-name">Parfums de Marly family</div>
+      <div class="inv-geo">Dubai (EU origin)</div>
+      <div class="inv-desc">First liquidity event from Advent sale completed. Second &mdash; much larger &mdash; expected on Advent's exit. Pre-liquidity relationship now positions us as first call when capital needs deployment.</div>
+      <div class="inv-angle">Plant now, harvest on Advent exit.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Mansour Group</div>
+      <div class="inv-geo">Dubai / London / Cairo</div>
+      <div class="inv-desc">Egyptian-origin merchant family, multi-billion FO. Auto distribution, industrials, finance. UK-listed positions. International alts allocator with US and EU exposure.</div>
+      <div class="inv-angle">Multi-jurisdictional FO with US-receptive mandate.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <div class="sub-panel" id="fo-asia">
+<div class="tier-header">
+    <div class="tier-num">03</div>
+    <div>
+      <div class="tier-tag">Asia-Pacific</div>
+      <div class="tier-title">Asia Family Offices</div>
+      <div class="tier-desc">New liquidity pools with near-zero US infra exposure. Most differentiated story in the book.</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Hong Kong</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Horizons Ventures (Li Ka-shing)</div>
+      <div class="inv-geo">Hong Kong</div>
+      <div class="inv-desc">Li family is now setting up a dedicated HK FO beyond Horizons. Family already runs CK Infrastructure with $bn+ infra exposure including US assets. Long-standing US infra appetite.</div>
+      <div class="inv-angle">Infra-native family. Pure fit.</div>
+      <div class="inv-badge plant">Plant (FO setup ongoing)</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Cheng Yu-Tung family / Chow Tai Fook</div>
+      <div class="inv-geo">Hong Kong</div>
+      <div class="inv-desc">Diversified holdings, jewellery, RE, hospitality, infra. Henry Cheng leads. Active US allocations.</div>
+      <div class="inv-angle">Diversified, US-allocating, scale.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Kwok family / Sun Hung Kai</div>
+      <div class="inv-geo">Hong Kong</div>
+      <div class="inv-desc">RE-rooted but FO branch (Empire Group) allocates broadly. Significant pools, multi-generational.</div>
+      <div class="inv-angle">Real assets-native. Infra natural extension.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Search Investment Group (Miller)</div>
+      <div class="inv-geo">Hong Kong</div>
+      <div class="inv-desc">Robert Miller FO, now generational handover to daughter. Daughter is a close personal relationship. PE/HF-focused but FO is institutionalizing &mdash; new generation often opens new manager relationships.</div>
+      <div class="inv-angle">Next-gen relationship. New manager appetite.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">SharkNinja chairman &amp; network</div>
+      <div class="inv-geo">HK / Asia</div>
+      <div class="inv-desc">Direct relationship. Around him: <strong>JD.com founder (Liu), Alibaba-connected families.</strong> Each represents new pools with near-zero infra exposure. Differentiated, novel pitch.</div>
+      <div class="inv-angle">Network of networks. Novel asset class story.</div>
+      <div class="inv-badge push">Push (lead via SharkNinja)</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Sterling Private Mgmt (Chen brothers)</div>
+      <div class="inv-geo">Hong Kong</div>
+      <div class="inv-desc">Hang Lung Group founders. Real estate-rooted. Long-established, conservative, slow but sticky.</div>
+      <div class="inv-angle">Slow cycle, sticky LP.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Singapore &amp; SE Asia</h4>
+  <div class="investor-grid">
+    <div class="investor-card plant">
+      <div class="inv-name">Mukesh Ambani FO (Singapore)</div>
+      <div class="inv-geo">Singapore / Mumbai</div>
+      <div class="inv-desc">Reliance Industries FO opened in Singapore in 2022. Energy / infra-native family. Worth careful mapping &mdash; warm intro path to be identified.</div>
+      <div class="inv-angle">Infra-native. Need warm intro.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Indonesian conglomerate FOs</div>
+      <div class="inv-geo">Jakarta / Singapore</div>
+      <div class="inv-desc"><strong>Hartono (Djarum), Salim Group, Sinar Mas, Lippo Group, Bakrie.</strong> Large pools, infra-receptive, often through Singapore holding structures.</div>
+      <div class="inv-angle">SE Asia infra-native families.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Thai &amp; Malaysian families</div>
+      <div class="inv-geo">Bangkok / KL / Singapore</div>
+      <div class="inv-desc"><strong>Chearavanont (CP Group), Sirivadhanabhakdi (TCC), Quek (Hong Leong), Kuok (Kerry Group).</strong> Multi-billion FOs, regional and US exposure.</div>
+      <div class="inv-angle">Established families, US-receptive.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Japan &amp; Korea</h4>
+  <div class="investor-grid two-col">
+    <div class="investor-card plant">
+      <div class="inv-name">Japan corporate FOs &amp; insurers</div>
+      <div class="inv-geo">Tokyo</div>
+      <div class="inv-desc">Distinct from Japanese SWF/pension institutional channel. Japanese corporate-treasury FO money is a quiet but growing pool. <strong>Mitsui, Mitsubishi, Sumitomo trading family extensions; Nippon Life, Dai-ichi Life FO arms; Softbank Vision-adjacent FO money post-IPOs.</strong> Long cycle, requires Japanese-language process support.</div>
+      <div class="inv-angle">Long cycle. Needs Tokyo trip with translator.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Korean chaebol-adjacent FOs</div>
+      <div class="inv-geo">Seoul</div>
+      <div class="inv-desc"><strong>Samsung, LG, SK, Hyundai, Lotte family FO structures.</strong> Often allocate alongside NPS and KIC. Korean institutional infra appetite has grown substantially. Family pools are smaller but sticky.</div>
+      <div class="inv-angle">Allocate alongside NPS &mdash; coordinated approach.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <h4 class="h4">India</h4>
+  <p class="body-text">Indian family wealth is one of the fastest-growing pools globally and structurally under-represented as LPs in US infrastructure funds. Indian families typically custody international capital through Singapore, Dubai, or London FO structures given FEMA restrictions on outbound investment from India itself. The named relationships below are genuine and the profiles fit Duration's mandate unusually well &mdash; several of these families built their businesses in or adjacent to transportation infrastructure.</p>
+
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Kanwar Family (Apollo Tyres / Apollo International)</div>
+      <div class="inv-geo">Delhi / Singapore / Amsterdam</div>
+      <div class="inv-desc">Direct relationship with <strong>Neeraj Kanwar</strong> (Vice Chairman &amp; MD, Apollo Tyres). Apollo is on track to ~$5bn revenues by 2026 with global operations (India, Netherlands, Hungary). Brother <strong>Raaja Kanwar</strong> chairs Apollo International / Apollo Supply Chain &mdash; logistics, EPC, automotive components. This is a transportation-native family with direct infra and mobility understanding. Natural fit for both TCIP and co-invest conversations.</div>
+      <div class="inv-angle">Transportation-native family, direct relationship.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Tata Family &amp; RNT Associates</div>
+      <div class="inv-geo">Mumbai / Singapore</div>
+      <div class="inv-desc"><strong>RNT Associates</strong> (Mumbai) and <strong>RNT Capital Advisors</strong> (Singapore FO) manage Ratan Tata estate investments. Post-Ratan Tata, succession is consolidating under Noel Tata and the Tata Trusts framework. The Tata Group is itself infra-native (Tata Motors, Tata Steel, Jaguar Land Rover, Air India, Tata Power). FO allocation mandate is evolving and worth positioning for early. Warm intro path to be mapped carefully given the family's institutional sensitivity.</div>
+      <div class="inv-angle">Singapore FO + evolving succession. Plant now.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Premji Invest</div>
+      <div class="inv-geo">Bangalore / Singapore</div>
+      <div class="inv-desc">Azim Premji's FO, started 2006 with $1bn, now multi-billion and one of the most institutional-quality Indian FO platforms. Active in PE and international alts. Portfolio includes Flipkart, Aditya Birla Capital, and other large commitments. Sophisticated allocation team; infra mandate is growing.</div>
+      <div class="inv-angle">Most institutional Indian FO. Scale appropriate for TIF II.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Infra-native Indian business families</div>
+      <div class="inv-geo">Mumbai / Ahmedabad / Delhi</div>
+      <div class="inv-desc"><strong>Ambani (Reliance FO &mdash; Singapore), Adani (ports, airports, energy, logistics &mdash; Adani Family Office), Jindal (JSW Ventures &mdash; steel and infra native), Hinduja Group (UK/India), Mahindra family (auto/logistics), Bajaj family (auto, finance).</strong> These families are infra-native by business heritage and increasingly allocate internationally. Ambani's Singapore FO and Adani's international pools are the highest-priority targets.</div>
+      <div class="inv-angle">Infra-native by business heritage. Natural conversations.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Broader Indian FO universe</div>
+      <div class="inv-geo">Mumbai / Bangalore / Delhi / Singapore</div>
+      <div class="inv-desc"><strong>Catamaran Ventures (Narayana Murthy, Infosys founder), Burman family (Dabur), Piramal family (pharma, financial services), Birla family (Aditya Birla Group), Godrej family, Murugappa Group (Chennai), Damani family (DMart), Shapoorji Pallonji / Mistry family (largest individual Tata Sons shareholder).</strong> ~140+ SFOs exist in India per industry estimates; a meaningful subset has outbound international mandate via Singapore/Dubai structures.</div>
+      <div class="inv-angle">Singapore gateway for most. Multi-channel approach.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Indian diaspora UHNW (GCC / UK / US)</div>
+      <div class="inv-geo">Dubai / London / NYC / SF</div>
+      <div class="inv-desc">Indian-origin UHNW families based outside India operate under far fewer regulatory constraints. <strong>Hinduja (London), Lakshmi Mittal family (London), Poonawalla family (Serum Institute &mdash; Pune + international), NRI tech founder FOs in SF/NYC.</strong> US-based Indian-origin FOs in particular are structurally US-dollar oriented and fit TCIP well.</div>
+      <div class="inv-angle">Fewer constraints, US-dollar native.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <p class="body-text">Worth coordinating a <strong>Mumbai / Delhi / Singapore trip</strong> within the first 6 months &mdash; given FEMA constraints, the operational FO conversation typically happens outside India even if the family decision-makers are onshore. Singapore is the de facto gateway for most Indian international allocation.</p>
+
+  </div>
+
+
+
+  <div class="sub-panel" id="fo-au">
+<div class="tier-header">
+    <div class="tier-num">04</div>
+    <div>
+      <div class="tier-tag">Australia</div>
+      <div class="tier-title">Australian Family Offices</div>
+      <div class="tier-desc">We only scratched the surface on Emmett's recent trip. Real depth here &mdash; particularly across the infra and energy fortunes.</div>
+    </div>
+  </div>
+
+  <p class="body-text">Australia is unusually fertile ground for Duration. The country's largest fortunes were built in mining, infrastructure, and energy &mdash; the FO principals understand the asset class natively. The institutional super fund universe (covered in Section V) is well-established as global infra LPs, but the FO universe is less systematically courted by US managers and represents the more distinctive opportunity. Direct relationships with two of the largest, plus connectivity into three or four others.</p>
+
+  <h4 class="h4">Direct relationships</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Lowy Family Office</div>
+      <div class="inv-geo">Sydney / NYC</div>
+      <div class="inv-desc">Westfield founders. Direct relationship. Sydney FO plus NYC operations. Real-assets-native, long-duration, multi-jurisdictional. The natural anchor for the Australian FO build.</div>
+      <div class="inv-angle">Direct anchor relationship. Cross-pollinates with NYC.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Second major Australian FO</div>
+      <div class="inv-geo">Sydney / Melbourne</div>
+      <div class="inv-desc">Among the largest Australian SFOs. Direct relationship. Sophisticated alts allocation, infra-receptive, US mandate already in place.</div>
+      <div class="inv-angle">Direct relationship. Anchor pair with Lowy.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Infra/energy FO connectivity</div>
+      <div class="inv-geo">Perth / Sydney / Melbourne</div>
+      <div class="inv-desc">Direct connectivity into three or four of Australia's largest infra and energy fortunes &mdash; principals whose wealth was built in the asset class Duration invests in. Receptive audience for both fund and co-invest discussions.</div>
+      <div class="inv-angle">Asset-class-native FOs. Natural fit.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Broader Australian FO universe (cultivate via above)</h4>
+  <div class="investor-grid two-col">
+    <div class="investor-card plant">
+      <div class="inv-name">Mining &amp; resources fortunes</div>
+      <div class="inv-geo">Perth / Sydney</div>
+      <div class="inv-desc"><strong>Forrest (Fortescue / Tattarang), Rinehart (Hancock Prospecting), Stokes (Seven Group / WesTrac).</strong> Multi-billion mining fortunes building diversified FO structures. Tattarang in particular has institutionalized rapidly with active alts mandate.</div>
+      <div class="inv-angle">Mining-to-infra diversification mandate.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Property &amp; industrial fortunes</div>
+      <div class="inv-geo">Sydney / Melbourne</div>
+      <div class="inv-desc"><strong>Pratt (Visy / Pratt Industries &mdash; significant US presence), Triguboff (Meriton), Smorgon family network, Liberman family.</strong> Pratt's US footprint is a useful conversation entry given Duration's US transportation focus.</div>
+      <div class="inv-angle">Pratt's US presence is the natural opener.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <p class="body-text">Worth a coordinated Sydney/Melbourne/Perth trip in the next 6 months &mdash; Emmett's existing relationships from the recent trip plus my direct connectivity makes for a substantive itinerary that goes well beyond what either of us could put together alone.</p>
+
+  </div>
+
+
+
+  <div class="sub-panel" id="fo-eu">
+<div class="tier-header">
+    <div class="tier-num">05</div>
+    <div>
+      <div class="tier-tag">Europe</div>
+      <div class="tier-title">European Family Offices</div>
+      <div class="tier-desc">2,000+ SFOs across Europe with avg 27% PE allocation. Geneva base is the structural advantage here.</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Switzerland (Geneva, Zurich, Basel)</h4>
+  <p class="body-text">Geneva is the operational base and the structural advantage for the EU FO build. Direct, multi-decade relationships across the Swiss SFO universe.</p>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Clozel family</div>
+      <div class="inv-geo">Basel / Allschwil</div>
+      <div class="inv-desc">Jean-Paul and Martine Clozel &mdash; founders of Actelion, sold to Johnson &amp; Johnson in 2017 for ~$30bn. Continue to run Idorsia (the spun-out R&amp;D company). One of the largest Swiss pharma-origin liquidity events in recent memory. Sophisticated post-liquidity FO with long-duration mandate. Direct relationship.</div>
+      <div class="inv-angle">Post-$30bn liquidity. High-conviction target.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Bertarelli family</div>
+      <div class="inv-geo">Geneva / Vaud</div>
+      <div class="inv-desc">Post-Serono liquidity, multi-billion SFO (Waypoint Capital). Long-duration alts allocation across PE, RE, real assets. Direct relationship of long standing. Sophisticated, institutional-quality FO process.</div>
+      <div class="inv-angle">Direct relationship. High-quality FO process.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">EU real estate family (Geneva)</div>
+      <div class="inv-geo">Geneva</div>
+      <div class="inv-desc">Largest EU shopping centre family, currently liquidating portfolio. Son-in-law managing 1/3 of assets is a close relationship. Real-assets-native capital in transition needing redeployment.</div>
+      <div class="inv-angle">Capital in transition. Real assets crossover into infra.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+  </div>
+
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Rupert family</div>
+      <div class="inv-geo">Geneva / Stellenbosch</div>
+      <div class="inv-desc">Johann Rupert &mdash; Richemont, Reinet, Compagnie Financière Richemont. Multi-billion family wealth with sophisticated FO infrastructure. Direct relationship. Reinet specifically is a vehicle for diversified long-term investments outside the luxury core.</div>
+      <div class="inv-angle">Direct relationship. Reinet is the natural entry vehicle.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Rimer family</div>
+      <div class="inv-geo">Geneva</div>
+      <div class="inv-desc">Direct Geneva relationship of long standing. Sophisticated, internationally-oriented FO. Natural target for both TCIP and co-invest conversations.</div>
+      <div class="inv-angle">Direct Geneva relationship.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Other Swiss SFO cluster</div>
+      <div class="inv-geo">Geneva / Zurich / Basel</div>
+      <div class="inv-desc">Beyond the named families above: significant cluster of multi-billion SFOs across Swiss financial centres including <strong>Hoffmann, Sandoz, Wertheimer, Hayek (Swatch), Schmidheiny</strong>. Conservative, long cycle, sticky multi-cycle LPs once committed.</div>
+      <div class="inv-angle">Slow but sticky. Begin relationship now.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <h4 class="h4">UK &amp; Ireland</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">David &amp; Leventis families</div>
+      <div class="inv-geo">London / Cyprus / Greece</div>
+      <div class="inv-desc">Direct relationships with both families. Controlling shareholders of <strong>Coca-Cola HBC AG (LSE: CCH)</strong> &mdash; one of the world's largest Coke bottlers, FTSE 100, operations across 29 countries in Europe and Africa. Control vehicle is Kar-Tess Holding (Luxembourg) / Boval / Truad Verwaltungs trust structure, ~23% of CCH plus significant additional family wealth. Anastassis David (Chairman) and the Leventis brothers (Anastasios P., Haralambos K.) sit on the CCHBC board. Greek-origin, UK-resident, institutional-quality FO process. Infra-adjacent given the scale industrial base of CCH and the broader Nigerian Bottling / African franchise history.</div>
+      <div class="inv-angle">Direct relationships. Industrial-scale wealth, UK-based.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Miller Family Office</div>
+      <div class="inv-geo">London / HK</div>
+      <div class="inv-desc">Daughter taking over &mdash; close personal relationship. UK and HK networks. Generational transitions are moments of opportunity for new manager relationships.</div>
+      <div class="inv-angle">Next-gen relationship. Network of networks.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Reuben Brothers</div>
+      <div class="inv-geo">London</div>
+      <div class="inv-desc">£20bn+ family. Active in RE, infra, data centres. Opportunistic, fast deal-making. Direct deal preference &mdash; co-invest is the entry point.</div>
+      <div class="inv-angle">Co-invest first, then fund.</div>
+      <div class="inv-badge plant">Plant (warm intro)</div>
+    </div>
+  </div>
+
+  <div class="investor-grid">
+    <div class="investor-card plant">
+      <div class="inv-name">Other UK FOs</div>
+      <div class="inv-geo">London</div>
+      <div class="inv-desc"><strong>Weston (Wittington), Sainsbury, Rausing (Tetra Pak), Bamford (JCB), Branson, Hinduja Group, Ineos (Ratcliffe FO).</strong> UK FO universe is large; need MS list cross-reference and selective targeting based on infra appetite.</div>
+      <div class="inv-angle">Cross-ref MS list, then prioritize.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Daurella family (separate Coke franchise)</div>
+      <div class="inv-geo">Barcelona / London</div>
+      <div class="inv-desc">Distinct from David/Leventis. Spanish family behind <strong>Coca-Cola Europacific Partners (LSE: CCEP)</strong> &mdash; the other major Coca-Cola bottler covering Western Europe, Australia/NZ, and Indonesia. Sol Daurella is chair. Bloomberg estimates family net worth $8bn+. Sophisticated, FTSE 100-listed entity plus family holding vehicles. Worth a plant even without prior direct relationship given parallel profile to David/Leventis.</div>
+      <div class="inv-angle">Parallel profile to David/Leventis. Warm intro worthwhile.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Continental Europe</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Madrid FOs &mdash; named direct relationships</div>
+      <div class="inv-geo">Madrid</div>
+      <div class="inv-desc"><strong>Cortina family (Alcor Holding / Grupo ACS)</strong> &mdash; direct relationship. Co-owners with the Alcocer cousins of Alcor Holding, which controls 12.5% of Grupo ACS (the world's largest construction group by sales) and 21% of Ence. Deeply infra-native through ACS. <strong>Koplowitz family (Omega Capital)</strong> &mdash; direct relationship. Alicia Koplowitz runs Omega Capital, €3bn+ FO built from her share of FCC (originally a construction family). Real assets-heavy (Ritz Madrid, Park Hyatt Milan, US commercial/office), PE, hedge funds. Historical tie to Cortina (Alberto Cortina was previously married to Alicia Koplowitz) makes both a natural coordinated approach. Plus broader Madrid FO universe: Pontegadea (Ortega &mdash; though primarily direct), March family (Corporación Financiera Alba / Banca March), Entrecanales (Acciona FO), Del Pino (Ferrovial family), Botin family. Spanish infra-family heritage is unusually strong (Acciona, Ferrovial, ACS, Sacyr).</div>
+      <div class="inv-angle">Cortina and Koplowitz infra-native, direct, linked. Lead the conversation there.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">German Mittelstand FOs</div>
+      <div class="inv-geo">Munich / Hamburg / Frankfurt</div>
+      <div class="inv-desc"><strong>Quandt (BMW), Reimann (JAB), Henkel, Otto family, Klatten, Thiele family, Boehringer Ingelheim family.</strong> Conservative, alignment-focused, expect detailed governance. HQ Trust and 4L Capital are MFO gatekeepers.</div>
+      <div class="inv-angle">Governance-heavy diligence. Strong LPs once in.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Italian industrial FOs</div>
+      <div class="inv-geo">Milan / Turin</div>
+      <div class="inv-desc"><strong>Edizione (Benetton family)</strong> &mdash; controls Mundys/Atlantia/Abertis, deeply infra-native. <strong>Elkann / Agnelli FO (Exor)</strong> &mdash; direct relationship; Exor's diversification beyond Stellantis includes growing alts mandate. <strong>Recordati family</strong> &mdash; pharma family, direct relationship, sophisticated post-liquidity FO. <strong>Giuliani family</strong> (Germano &amp; Giammaria) &mdash; direct relationship. Still control the 4th-generation family pharma company (Giuliani SpA, Milan); were <em>seed investors</em> in Royalty Pharma after meeting Pablo Legorreta at Milan airport in 1996, stake peaked at ~$3bn post-IPO. Very active FO in co-invests across healthcare, finance, tech. Cross-border structure (GiSev Family Office SA plus Nogra vehicles in Monaco/Luxembourg; Mosaix Ventures US arm). <strong>Germano Giuliani also sits on the Recordati board</strong> &mdash; the two Italian pharma relationships reinforce each other materially.</div>
+      <div class="inv-angle">Four named direct relationships; Giuliani the co-invest specialist, Recordati/Giuliani compound.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+  </div>
+
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">French FOs &mdash; named direct relationships</div>
+      <div class="inv-geo">Paris</div>
+      <div class="inv-desc"><strong>Peugeot family (FFP / Peugeot Invest)</strong> &mdash; direct relationship. €5bn+ listed investment vehicle plus family wealth; active alts allocator with growing infra appetite. <strong>Dassault family</strong> &mdash; direct relationship. Multi-billion family fortune across Dassault Aviation, Dassault Systèmes, and the family holding (Groupe Industriel Marcel Dassault). Both are sophisticated, US-receptive, and the right entry points to broader French FO universe.</div>
+      <div class="inv-angle">Direct relationships. Push.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Other French FOs</div>
+      <div class="inv-geo">Paris</div>
+      <div class="inv-desc"><strong>Arnault (LVMH FO), Pinault (Artemis), Bouygues, Bolloré, Mulliez (Auchan), Wendel-Participations, Decaux family.</strong> Large universe; Peugeot and Dassault relationships open the door to systematic outreach across the rest.</div>
+      <div class="inv-angle">Cultivate via Peugeot/Dassault network.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Nordic FOs</div>
+      <div class="inv-geo">Stockholm / Copenhagen / Oslo</div>
+      <div class="inv-desc"><strong>KIRKBI (LEGO/Kirk Kristiansen)</strong> &mdash; $16bn+ AUM, infra-aligned. <strong>Wallenberg (Investor AB), Ferd (Andresen, Norway), Persson family (H&amp;M), Lundbergs.</strong> KIRKBI is the most natural infra fit.</div>
+      <div class="inv-angle">KIRKBI fits TCIP profile precisely.</div>
+      <div class="inv-badge plant">Plant (KIRKBI first)</div>
+    </div>
+  </div>
+
+  <div class="investor-grid two-col">
+    <div class="investor-card plant">
+      <div class="inv-name">German Mittelstand &amp; Benelux</div>
+      <div class="inv-geo">Munich / Frankfurt / Amsterdam</div>
+      <div class="inv-desc"><strong>Brenninkmeijer (C&amp;A, Sunrock infra), Heineken family (van Marwijk Kooy), van der Vorm (HAL), Solvay, Boel family.</strong> Brenninkmeijer's Sunrock platform makes them genuinely infra-aligned. Conservative, alignment-focused diligence process across Mittelstand and Benelux family universe.</div>
+      <div class="inv-angle">Brenninkmeijer infra-aligned. Strong LPs once in.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+    <div class="investor-card plant">
+      <div class="inv-name">Other EU</div>
+      <div class="inv-geo">Poland / Greece</div>
+      <div class="inv-desc"><strong>Kulczyk (Poland)</strong> &mdash; recent French highway concession exit (~€700m), genuinely infra-native, building international FO process. <strong>Onassis Foundation, Latsis (Greece)</strong> &mdash; shipping wealth with diversified alts mandate.</div>
+      <div class="inv-angle">Kulczyk infra-native, recent liquidity.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <div class="sub-panel" id="fo-latam">
+<div class="tier-header">
+    <div class="tier-num">06</div>
+    <div>
+      <div class="tier-tag">Latin America</div>
+      <div class="tier-title">Miami MFOs &amp; LatAm Family Offices</div>
+      <div class="tier-desc">Miami as the hub for US-custodied LatAm family capital. Deep direct connectivity across Panama, Venezuela, Brazil, Argentina, Chile, Colombia.</div>
+    </div>
+  </div>
+
+  <p class="body-text">An often under-appreciated channel. Large LatAm families typically custody significant capital offshore &mdash; much of it in Miami MFOs &mdash; and many run private investment offices that mirror institutional process. They are structurally US-dollar denominated, infra-familiar (many family businesses are themselves in transportation, logistics, energy, or utilities), and tend to prefer managers with strong US-focused mandates. The Stephen Robert Miami MFO relationship (already covered in the US section) is one entry point; the broader universe below is directly accessible through relationships built over the same 20+ year arc.</p>
+
+  <h4 class="h4">Miami MFOs servicing LatAm families</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">WE Family Offices</div>
+      <div class="inv-geo">Miami / NYC</div>
+      <div class="inv-desc">One of the largest MFOs dedicated to LatAm and international families. Multi-billion AUM, sophisticated alts platform. Strong PE and infra allocation process. Natural target for a structured relationship.</div>
+      <div class="inv-angle">Scale LatAm MFO platform. Priority meeting.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Insigneo / GenTrust / Boreal</div>
+      <div class="inv-geo">Miami</div>
+      <div class="inv-desc">Second tier of Miami MFOs and wealth platforms specializing in LatAm UHNW. Each represents multiple underlying family relationships. Cross-reference with Stephen Robert's Miami MFO network for introductions.</div>
+      <div class="inv-angle">Land-and-expand via underlying families.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Private bank LatAm desks (Miami)</div>
+      <div class="inv-geo">Miami</div>
+      <div class="inv-desc"><strong>JP Morgan, Citi, Morgan Stanley, UBS, Santander, BTG Pactual</strong> LatAm private banking units based in Miami. Each serves dozens of UHNW LatAm families, many of whom allocate to third-party managers through their advisors. Gateway channel.</div>
+      <div class="inv-angle">Aggregator channel. Multiple families per relationship.</div>
+      <div class="inv-badge plant">Plant</div>
+    </div>
+  </div>
+
+  <h4 class="h4">Direct LatAm family relationships</h4>
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Panama &mdash; Motta family anchor</div>
+      <div class="inv-geo">Panama City</div>
+      <div class="inv-desc">Direct relationship with the <strong>Motta family</strong> &mdash; Panama's most prominent business family, behind Motta Internacional (Copa Airlines parent), Banistmo historical lineage, Motta International (aviation, logistics, retail duty-free via Grupo Wisa), and significant regional infrastructure. Deeply infra-native and US-oriented given Copa's US operations and Panama's logistics economy. Plus broader direct relationships: <strong>Eleta, Waked, Chiari, Vallarino</strong> and others. Panama's role as regional hub makes this FO community unusually infra-receptive.</div>
+      <div class="inv-angle">Motta the anchor. Logistics/aviation-native. Push.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Venezuela (diaspora capital)</div>
+      <div class="inv-geo">Miami / Madrid / Geneva</div>
+      <div class="inv-desc">Direct relationships across the Venezuelan business diaspora &mdash; families who relocated capital out of the country over the past two decades and now operate substantial FOs out of Miami, Madrid, and Geneva. <strong>Cisneros, Mendoza, Vollmer, Phelps, Zuloaga</strong> and broader network. Cisneros in particular has an institutional-grade FO with global alts mandate.</div>
+      <div class="inv-angle">Diaspora capital, US-oriented, direct relationships.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Brazil</div>
+      <div class="inv-geo">São Paulo / Miami</div>
+      <div class="inv-desc">Direct relationships across Brazilian family groups &mdash; <strong>Moreira Salles (Itaú), Safra, Lemann (3G), Setúbal, Villela, Civita, Ermírio de Moraes (Votorantim).</strong> Brazilian families increasingly allocate internationally through Miami and NYC. Many have direct infra exposure (CCR, Ecorodovias, energy concessions) making them asset-class-native LPs.</div>
+      <div class="inv-angle">Infra-native via domestic portfolio. US mandate growing.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+  </div>
+
+  <div class="investor-grid">
+    <div class="investor-card push">
+      <div class="inv-name">Argentina</div>
+      <div class="inv-geo">Buenos Aires / Miami / Madrid</div>
+      <div class="inv-desc">Direct relationships across Argentine families &mdash; <strong>Pérez Companc (infra-native via Pecom Energía heritage), Mindlin (Pampa Energía), Bulgheroni (Bridas), Rocca (Techint Group &mdash; steel and infra), Eurnekian.</strong> Argentine families typically custody significant capital offshore and operate substantial Miami-based FOs.</div>
+      <div class="inv-angle">Techint and Pérez Companc are natural infra LPs.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Chile</div>
+      <div class="inv-geo">Santiago / Miami</div>
+      <div class="inv-desc">Direct relationships &mdash; <strong>Luksic (mining, banking, infra via Quiñenco), Angelini (Copec, forestry, infra), Matte (CMPC), Paulmann (Cencosud), Solari (Falabella).</strong> Chile's family universe is unusually sophisticated in international allocation; Luksic Group is among the most institutionally-structured LatAm FO platforms.</div>
+      <div class="inv-angle">Luksic most institutional, direct relationship.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+    <div class="investor-card push">
+      <div class="inv-name">Colombia</div>
+      <div class="inv-geo">Bogotá / Medellín / Miami</div>
+      <div class="inv-desc">Direct relationships &mdash; <strong>Santo Domingo (already covered via Quadrant in the US section)</strong>, <strong>Echavarría family (Medellín)</strong> &mdash; historically central to Grupo Empresarial Antioqueño (GEA), the Medellín business group behind Grupo Sura / Bancolombia / Nutresa / Argos and the backbone of Antioquia's industrial wealth; <strong>Sarmiento Angulo (Grupo Aval), Ardila Lülle (RCN / Postobón heritage), Gilinski.</strong> Santo Domingo is the decades-long anchor; Echavarría opens the Medellín industrial/infra network; Sarmiento and others are accessible via these relationships.</div>
+      <div class="inv-angle">Santo Domingo + Echavarría as twin anchors; expand from there.</div>
+      <div class="inv-badge push">Push</div>
+    </div>
+  </div>
+
+  <p class="body-text">Worth a coordinated Miami trip early in the process &mdash; one productive week can produce meetings with multiple MFOs, private bank LatAm desks, and family principals who happen to be in town (Miami is the de facto meeting place for much of this universe). Stephen Robert's MFO network provides the opening frame.</p>
+</div>
+</section>
+</div>
+
+<div class="tab-panel" id="tab-inst">
+<section class="section">
+  <div class="section-label">Section V &mdash; Institutional Targets</div>
+  <h2 class="section-title">Institutional <em>LPs</em> &mdash; the priority list</h2>
+  <p class="body-text">Per Infrastructure Investor's 2025 Global Investor 75, the world's top infra LPs cluster across three groups: SWFs ($350bn+ combined), Canadian and other public pension plans ($250bn+), and European insurers/pension managers ($150bn+). The list below is filtered to LPs that (a) actively allocate to North American transportation infrastructure, (b) have ticket sizes appropriate to TIF II's $1.5&ndash;2bn target, and (c) are not already TIF I LPs (or where there's room to upsize existing relationships).</p>
+
+  <h4 class="h4">Sovereign wealth funds &mdash; primary targets</h4>
+  <ul class="clean">
+    <li><strong>ADIA (existing LP)</strong> &mdash; deepen, possibly upsize TIF II</li>
+    <li><strong>GIC (existing LP)</strong> &mdash; deepen, upsize for TIF II and TCIP</li>
+    <li><strong>Mubadala (Abu Dhabi)</strong> &mdash; ADIA peer, infra-active, US transportation appetite confirmed via prior deals</li>
+    <li><strong>ADQ (Abu Dhabi)</strong> &mdash; newer, building infra book, appetite for established North American managers</li>
+    <li><strong>Temasek (Singapore)</strong> &mdash; GIC peer, less direct US infra exposure but growing</li>
+    <li><strong>NZ Super</strong> &mdash; sophisticated infra allocator, strong North American mandate</li>
+    <li><strong>Future Fund (Australia)</strong> &mdash; major infra LP, validated by Sydney trip</li>
+    <li><strong>Khazanah (Malaysia)</strong> &mdash; growing US allocation, infra-receptive</li>
+    <li><strong>QIA (Qatar)</strong> &mdash; selective but writes large checks; US infra confirmed appetite</li>
+    <li><strong>PIF (Saudi)</strong> &mdash; rapidly scaling international PE/infra; needs careful structuring conversation</li>
+    <li><strong>KIA (Kuwait)</strong> &mdash; established LP profile, US transportation receptive</li>
+    <li><strong>Norges Bank (NBIM, Norway)</strong> &mdash; primarily public, but growing real-assets allocation worth tracking</li>
+  </ul>
+
+  <h4 class="h4">North American public pensions</h4>
+  <ul class="clean">
+    <li><strong>CalSTRS, Washington State, Michigan (existing LPs)</strong> &mdash; deepen for TIF II</li>
+    <li><strong>CPPIB</strong> &mdash; #3 globally in infra at $37bn; <em>Ports America counterparty</em> &mdash; the relationship is already there, the question is converting it into a fund commitment</li>
+    <li><strong>La Caisse / CDPQ</strong> &mdash; #1 pension globally in infra at $44bn; sophisticated, but lengthy process</li>
+    <li><strong>OTPP (Ontario Teachers)</strong> &mdash; large, direct-investment-oriented, but co-invest fits</li>
+    <li><strong>OMERS</strong> &mdash; $27bn infra; runs Strategic Partnership Program (third-party capital)</li>
+    <li><strong>HOOPP, BCI, OPTrust, PSP, AIMCo</strong> &mdash; second tier of Canadian pensions, all infra-active</li>
+    <li><strong>Oregon PERS, Ohio STRS, Florida SBA</strong> &mdash; US peer pensions, follow CalSTRS-pattern allocators</li>
+    <li><strong>Texas TRS, Pennsylvania PSERS, Virginia Retirement, Maryland State Retirement</strong> &mdash; meaningful infra programs</li>
+    <li><strong>Colorado PERA, Illinois Teachers, NYC Comptroller systems</strong> &mdash; large second-tier US pensions</li>
+    <li><strong>Indiana PRS, Wisconsin SWIB, North Carolina Retirement</strong> &mdash; state systems with growing infra programs</li>
+    <li><strong>SFERS, LACERA, OCERS</strong> &mdash; California county/local systems</li>
+  </ul>
+
+  <h4 class="h4">European institutional &amp; insurers</h4>
+  <ul class="clean">
+    <li><strong>APG (existing LP)</strong> &mdash; deepen</li>
+    <li><strong>PGGM (Netherlands)</strong> &mdash; APG peer, second major Dutch pension manager</li>
+    <li><strong>ATP (Denmark), AP1&ndash;AP7 (Sweden), Varma &amp; Ilmarinen (Finland)</strong> &mdash; Nordic pensions, often follow APG into managers</li>
+    <li><strong>Allianz Capital Partners</strong> &mdash; $17bn+ infra; manages Allianz Group infra exposure</li>
+    <li><strong>AXA, Generali, Aviva, NN Group, Aegon, Talanx, Munich Re, Swiss Re</strong> &mdash; European insurers with active infra programs under Solvency II</li>
+    <li><strong>BVK, Publica, Migros pension fund</strong> &mdash; Swiss pension allocators</li>
+    <li><strong>BT Pension Scheme, USS, Railpen</strong> &mdash; UK private pensions, infra-active</li>
+    <li><strong>L&amp;G, Phoenix Group, Standard Life Aberdeen</strong> &mdash; UK insurer-pension complex</li>
+    <li><strong>Caisse des Dépôts (France), CDP (Italy)</strong> &mdash; sovereign-adjacent allocators</li>
+  </ul>
+
+  <h4 class="h4">Asia-Pacific institutional</h4>
+  <ul class="clean">
+    <li><strong>NPS (Korea National Pension Service)</strong> &mdash; $20bn+ infra; major US infra appetite</li>
+    <li><strong>KIC (Korea Investment Corporation)</strong> &mdash; sovereign equivalent, infra-active</li>
+    <li><strong>Korean Teachers' Credit Union, POBA, KP&amp;T</strong> &mdash; second-tier Korean institutionals, often follow NPS</li>
+    <li><strong>JBIC, GPIF (Japan)</strong> &mdash; growing infra appetite via fund-of-fund channels</li>
+    <li><strong>Nippon Life, Dai-ichi Life, Tokio Marine</strong> &mdash; Japanese insurer infra programs</li>
+    <li><strong>AustralianSuper, AwareSuper, Hostplus, UniSuper, Cbus, REST, HESTA</strong> &mdash; Australian super funds, all material infra LPs</li>
+    <li><strong>NZ Super (also listed under SWFs)</strong></li>
+  </ul>
+
+  <p class="note">Lists above are starting points for the three of us to prioritize together with the IR team, not commitment lists. Each name needs an "approach" mapped: who covers, what's known about current managers, what's the timing of their next infra allocation, and whether PH or internal-led is the right channel.</p>
+</section>
+</div>
+
+<div class="tab-panel" id="tab-halo">
+<section class="section">
+  <div class="section-label">Section VI &mdash; Portfolio Halo</div>
+  <h2 class="section-title">The <em>portfolio</em> as introduction</h2>
+  <p class="body-text">A line that often opens FO doors better than the fund pitch is "we own X" &mdash; where X is a business the FO already knows and respects. The portfolio is full of these. Worth a structured exercise to identify the families adjacent to each portfolio company.</p>
+
+  <h4 class="h4">Watco &mdash; the worked example</h4>
+  <p class="body-text">Watco is the most distinctive name in the portfolio &mdash; Kansas-based, multi-decade short-line rail story, deep relationship with the Webb family (founders), and a management team that is well-known in the rail community. Combined Duration ownership is ~40% across TIF and TICP. The post-June 2025 TICP follow-on at 31% gross IRR is a fresh story.</p>
+  <p class="body-text">Three FO clusters worth a Watco-led approach:</p>
+  <ul class="clean">
+    <li><strong>Kansas / Midwest families</strong> &mdash; Wichita and Kansas City wealth, agricultural and logistics families who watched Watco grow. The <strong>Koch family</strong> (though their FO is unusual), <strong>Globe Resources Group (O'Shaughnessy, Wichita), Cargill / MacMillan family network</strong>, plus the broader Midwest grain and ag-logistics merchant families</li>
+    <li><strong>Rail-sector-connected families</strong> nationally &mdash; <strong>Berkshire Hathaway / Buffett-adjacent FOs</strong> given BNSF ownership, families connected to <strong>Union Pacific, Norfolk Southern, CSX, Kansas City Southern</strong> retired executives. James Burchetta's Watco board work and David Starling's involvement are introduction points</li>
+    <li><strong>Transportation-services families</strong> &mdash; trucking, intermodal, and logistics families nationally. Often allocate to transportation funds because they understand the asset class natively</li>
+  </ul>
+
+  <h4 class="h4">Other portfolio companies &mdash; same exercise</h4>
+  <p class="body-text">Each major holding deserves the same treatment. Worth doing this systematically across the three of us with the IR team:</p>
+  <ul class="clean">
+    <li><strong>Ports America</strong> &mdash; maritime/shipping families globally; West Coast logistics families; the CPPIB connection is itself an intro pathway</li>
+    <li><strong>Mainstay Maritime</strong> &mdash; Great Lakes regional families; Jones Act marine community</li>
+    <li><strong>OTG (On The Go)</strong> &mdash; airport-connected families; airline executive alumni FOs; Dave Barger's JetBlue network</li>
+    <li><strong>CCM</strong> &mdash; South Atlantic logistics families; ocean carrier-connected wealth (OCEMA backdrop)</li>
+    <li><strong>NPG</strong> &mdash; urban real estate families; parking/mobility-connected wealth</li>
+  </ul>
+  <p class="body-text">The industry specialist roster is itself an introduction asset &mdash; <strong>Dave Barger (JetBlue), Bill Flynn (Amtrak/Atlas), Tony Coscia (Amtrak/PANY-NJ), Mark Montgomery (Ports America), Rosemary Turner (UPS), Eash Sundaram (JetBlue)</strong> all have FO networks worth tapping. Now that initial relationships are in place from last week's AGM in NYC, the next step is a structured follow-up conversation with each of them about which families they would happily introduce.</p>
+</section>
+</div>
+
+<div class="tab-panel" id="tab-cons">
+<section class="section">
+  <div class="section-label">Section VII &mdash; Consultants</div>
+  <h2 class="section-title">The <em>consultant</em> layer</h2>
+  <p class="body-text">A parallel track regardless of the PH decision. Many large FOs and most institutional LPs route manager conversations through their retained consultants. Duration may already have relationships with some of these &mdash; first task is for the three of us to map existing coverage with the IR team before approaching anyone cold. Where gaps exist, they should be filled in the next 60 days, before the formal TIF II process accelerates.</p>
+  <div class="consultant-grid">
+    <div class="consultant-card"><div class="cons-name">StepStone Group</div><div class="cons-type">Global &mdash; Private Markets</div><div class="cons-desc">Largest private markets advisory globally. Deep infra practice, both institutional and FO clients. Diligence process is thorough &mdash; engage early. Their endorsement carries significant signaling value.</div></div>
+    <div class="consultant-card"><div class="cons-name">Hamilton Lane</div><div class="cons-type">Global &mdash; Private Markets</div><div class="cons-desc">Advises institutional LPs and manages discretionary capital. Growing infra practice. Distribution platform reaches both institutional and wealth channels.</div></div>
+    <div class="consultant-card"><div class="cons-name">Cambridge Associates</div><div class="cons-type">Endowments &amp; Foundations</div><div class="cons-desc">Dominant consultant to university endowments. Direct reinforcement with NYU/Columbia relationships. Cambridge infra research is widely read by endowment CIOs.</div></div>
+  </div>
+  <div class="consultant-grid four-col">
+    <div class="consultant-card"><div class="cons-name">Townsend Group</div><div class="cons-type">Real Assets Specialist</div><div class="cons-desc">Leading real assets consultant &mdash; infra, RE, natural resources. Significant institutional client base.</div></div>
+    <div class="consultant-card"><div class="cons-name">Albourne Partners</div><div class="cons-type">Alternatives &mdash; Global</div><div class="cons-desc">Independent research model. Approved-list status meaningful for FO and endowment clients who rely on Albourne ratings.</div></div>
+    <div class="consultant-card"><div class="cons-name">Mercer</div><div class="cons-type">Global &mdash; Institutional</div><div class="cons-desc">Advises major pensions, insurers, SWFs. Most valuable for European, Australian, Canadian institutional reach.</div></div>
+    <div class="consultant-card"><div class="cons-name">Grosvenor Capital</div><div class="cons-type">Multi-Asset Consultant</div><div class="cons-desc">Multi-asset advisor with significant infra practice. Strong Midwest and US institutional client base.</div></div>
+  </div>
+  <p class="body-text">Worth adding a few that didn't make the original list but are increasingly relevant: <strong>Aksia</strong> (alternatives consultant to large institutionals), <strong>Meketa</strong> (US public pension consultant with growing infra practice), <strong>Wilshire</strong> (US institutional consultant), <strong>Verus, NEPC</strong> (US institutional consultants with public pension reach), <strong>Aon Hewitt</strong> (global pension consultant).</p>
+</section>
+</div>
+
+<div class="tab-panel" id="tab-exec">
+<section class="section">
+  <div class="section-label">Section VIII &mdash; Execution</div>
+  <h2 class="section-title">How I'd <em>run</em> it</h2>
+  <p class="body-text">Sequenced and staggered, with the three of us coordinating closely and the IR team executing in support. Push targets get active outreach in the first 60 days. Plant targets get relationship build now &mdash; harvested when the timing is right. Each of us deployed where our presence moves the needle most.</p>
+  <div class="timeline">
+    <div class="tl-item milestone"><div class="tl-date">Month 1</div><div class="tl-title">Map &amp; prioritize together</div><div class="tl-body">The three of us audit Duration's existing LP and consultant relationships, working through the IR team's existing coverage. Cross-reference with my personal network and the Morgan Stanley FO list. Agree the push/plant categorization together. Confirm where things stand on the PH decision so my workplan slots in cleanly with whichever path you've chosen.</div></div>
+    <div class="tl-item"><div class="tl-date">Months 1&ndash;2</div><div class="tl-title">First wave &mdash; push targets</div><div class="tl-body"><strong>Push now</strong> &mdash; the direct-relationship names: Quadrant, Lowy + second Australian FO, Stephen Robert MFO, Vista FO, EU pharma families, Geneva RE family, Bertarelli, Rupert, Rimer, Miller (UK/HK), Cortina, Koplowitz, Peugeot, Dassault, Elkann, Recordati, Giuliani, Edizione, David &amp; Leventis (Coca-Cola HBC), Olayan, Al Nahyan, Al Habtoor, Al Futtaim, Al Shaya, Al Sabah, Motta (Panama), Echavarría (Medellín), NYU/Columbia endowments, NYC RIAs, CAIS (Matt Brown), SharkNinja network. Personal outreach from me. Initial meetings &mdash; often virtual, sometimes in-person where geography aligns &mdash; to gauge interest and begin education.</div></div>
+    <div class="tl-item"><div class="tl-date">Months 2&ndash;3</div><div class="tl-title">Consultant engagement</div><div class="tl-body">Map gap consultants vs. existing coverage. Begin engagement with the priority three (StepStone, Hamilton Lane, Cambridge), then second tier. Consultant relationships take time &mdash; starting now is essential before TIF II accelerates.</div></div>
+    <div class="tl-item"><div class="tl-date">Months 2&ndash;4</div><div class="tl-title">PH coordination (if engaged)</div><div class="tl-body">If PH is the path, coordinate closely on LP overlap. My FO channel is complementary to PH's institutional coverage. Joint pipeline meetings to identify where PH's institutional LPs include embedded FO relationships I should be briefed on.</div></div>
+    <div class="tl-item"><div class="tl-date">Months 3&ndash;6</div><div class="tl-title">Second wave &mdash; cultivate plant targets</div><div class="tl-body">Begin cultivation of plant targets: Swiss FO cluster, Dubai-based EU FOs, Asia networks (JD.com, Alibaba-connected, Indonesian conglomerates), German Mittelstand, Korean chaebol-adjacent FOs. Different pace &mdash; regular touchpoints, LP events, portfolio company visits where possible.</div></div>
+    <div class="tl-item"><div class="tl-date">Months 4&ndash;8</div><div class="tl-title">Portfolio halo campaign</div><div class="tl-body">Complete the Watco geography/sector mapping. Identify top 10 FOs in Kansas/Midwest and top 10 in rail/logistics nationally. Repeat for each major portfolio company &mdash; systematized process the IR team can help execute once methodology is established. Follow-up conversations with industry specialists (initial relationships established at the NYC AGM) to map their introducible FO networks.</div></div>
+    <div class="tl-item milestone"><div class="tl-date">Months 6&ndash;12</div><div class="tl-title">Coordinated partner deployment</div><div class="tl-body">Each of us deployed where our presence closes warm relationships &mdash; founder presence for the largest institutional commitments, my network for the FOs I've been cultivating, and joint visits where the LP has earned face time from more than one of us. The aim is that every meeting maximizes the leverage of who's in the room.</div></div>
+    <div class="tl-item"><div class="tl-date">Months 9&ndash;18</div><div class="tl-title">TIF II close &amp; TCIP build</div><div class="tl-body">Formal TIF II close. TCIP grow-out from FO channel. Co-invest pipeline active and feeding into fund relationships. Ongoing consultant coverage so all priority firms track Duration through the cycle.</div></div>
+  </div>
+</section>
+</div>
+
+<div class="tab-panel" id="tab-horizon">
+<section class="section">
+  <div class="section-label">Section IX &mdash; Horizon</div>
+  <h2 class="section-title">The <em>100 days</em> &mdash; and the <em>next ten years</em></h2>
+  <p class="horizon-intro">The sections above cover what gets done. This one covers when, in what sequence, and at what ambition level. An outline to anchor our discussion &mdash; not a fixed plan. The phases get less detailed as the horizon extends, which is the right level of precision for a draft. The point is to put the arc on paper so the three of us can work backwards from what Duration becomes in a decade to what we do first week.</p>
+
+  <div class="phase-divider">
+    <div class="phase-divider-label">Phase 1</div>
+    <div class="phase-divider-title">The <em>first 100 days</em></div>
+  </div>
+
+  <div class="metric-strip">
+    <div class="metric-cell"><div class="metric-label">Orientation</div><div class="metric-value">Audit, align, <em>no commitments yet</em></div></div>
+    <div class="metric-cell"><div class="metric-label">PH Path</div><div class="metric-value">Confirmed by day <em>30&ndash;45</em></div></div>
+    <div class="metric-cell"><div class="metric-label">First Outreach</div><div class="metric-value">Push targets live by day <em>60</em></div></div>
+  </div>
+
+  <div class="horizon-grid">
+    <div class="horizon-left">
+      <div class="horizon-when"><em>Days</em> 1&ndash;30</div>
+      <div class="horizon-phase">Onboard &amp; Audit</div>
+    </div>
+    <div class="horizon-right">
+      <div class="horizon-title">Learning the whole of Duration</div>
+      <div class="horizon-sub">The first month is absorbing, not acting.</div>
+      <ul class="horizon-checklist">
+        <li><strong>Compensation framework</strong> finalized &mdash; separate conversation</li>
+        <li>Establish <strong>weekly cadence</strong> between the three of us + IR</li>
+        <li>Continue to build on AGM to get to know team members better &mdash; <strong>Nate, Will, and the broader senior team</strong></li>
+        <li>Review every <strong>LPA, side letter, and fund document</strong> for TIF I and TICP</li>
+        <li>Map the <strong>32 existing TIF I LPs</strong> &mdash; coverage, last contact, current sentiment</li>
+        <li>Build on relationships from the <strong>Duration AGM in NYC last week</strong> &mdash; deepen with the industry specialists (Barger, Flynn, Coscia, Montgomery, Turner, Sundaram) and the portfolio company CEOs already met</li>
+        <li>Sit with the <strong>deal teams</strong> for in-depth portfolio company reviews</li>
+        <li>Baseline the <strong>existing consultant coverage</strong> with Nate</li>
+        <li>Cross-reference the <strong>Morgan Stanley FO list</strong> against my personal network</li>
+        <li>Begin building the <strong>CRM-level target map</strong> that the three of us work from</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="horizon-grid">
+    <div class="horizon-left">
+      <div class="horizon-when"><em>Days</em> 30&ndash;60</div>
+      <div class="horizon-phase">Align &amp; Decide</div>
+    </div>
+    <div class="horizon-right">
+      <div class="horizon-title">Confirm the PH path &mdash; and lock the strategic frame</div>
+      <div class="horizon-sub">Turn the audit into decisions and a shared playbook.</div>
+      <ul class="horizon-checklist">
+        <li><strong>PH decision</strong> confirmed (or made, if not yet settled) within the first 30&ndash;45 days</li>
+        <li>Agree <strong>push/plant categorization</strong> on the LP target map</li>
+        <li>Define <strong>role carve-up</strong> (who covers what, when each of us is deployed)</li>
+        <li>Brief the <strong>IR team</strong> on the plan and the new outreach cadence</li>
+        <li>Refresh <strong>TIF II institutional materials</strong> if PH not engaged</li>
+        <li>Agree <strong>FO-appropriate materials</strong> (TCIP-led, co-invest-anchored)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="horizon-grid">
+    <div class="horizon-left">
+      <div class="horizon-when"><em>Days</em> 60&ndash;100</div>
+      <div class="horizon-phase">First Wave Live</div>
+    </div>
+    <div class="horizon-right">
+      <div class="horizon-title">Doors open, meetings start</div>
+      <div class="horizon-sub">Push targets get first contact. Calendar fills.</div>
+      <ul class="horizon-checklist">
+        <li>Direct outreach to <strong>all Push targets</strong> across regions</li>
+        <li>Target <strong>30&ndash;40 first meetings</strong> in this window (mostly virtual, some in-person)</li>
+        <li><strong>Geneva trip</strong> with Emmett to pharma families, RE family, Bertarelli, Rupert, Rimer</li>
+        <li><strong>Dubai / Abu Dhabi trip</strong> for Al Nahyan, Al Habtoor, Al Futtaim, Al Shaya, Olayan</li>
+        <li>Begin <strong>consultant engagement</strong> with priority three (StepStone, Hamilton Lane, Cambridge)</li>
+        <li>First <strong>FO co-invest conversations</strong> on active deals (Watco, others)</li>
+        <li>NYC push: <strong>Quadrant, Tisch, Vista, Tiger/Coatue alumni, East Coast RIAs, CAIS (Matt Brown)</strong></li>
+        <li>First <strong>pipeline review</strong> with the three of us &mdash; what's live, what's warming</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase-divider">
+    <div class="phase-divider-label">Phase 2</div>
+    <div class="phase-divider-title">The <em>6-month</em> picture</div>
+  </div>
+
+  <div class="metric-strip">
+    <div class="metric-cell"><div class="metric-label">Pipeline</div><div class="metric-value"><em>80&ndash;100</em> live LP conversations</div></div>
+    <div class="metric-cell"><div class="metric-label">First Commits</div><div class="metric-value">Co-invest / TCIP <em>starting to close</em></div></div>
+    <div class="metric-cell"><div class="metric-label">Plant Track</div><div class="metric-value">All cultivated, <em>regular touchpoints</em></div></div>
+  </div>
+
+  <div class="horizon-grid">
+    <div class="horizon-left">
+      <div class="horizon-when"><em>Month</em> 6</div>
+      <div class="horizon-phase">First Commitments</div>
+    </div>
+    <div class="horizon-right">
+      <div class="horizon-title">Proof of concept</div>
+      <div class="horizon-sub">From cold calendar to warm relationships to first checks.</div>
+      <ul class="horizon-checklist">
+        <li>First <strong>FO co-invest commitments</strong> closed (one or two, signal matters more than size)</li>
+        <li>First <strong>TCIP commitments</strong> from the FO channel</li>
+        <li><strong>Plant universe</strong> in systematic cultivation &mdash; events, calls, portfolio visits</li>
+        <li><strong>Asia trip</strong> (HK/Singapore/Tokyo) to kick off the longer-cycle plants</li>
+        <li><strong>Australia trip</strong> with Emmett &mdash; Lowy, second FO, infra/energy connectivity</li>
+        <li><strong>Consultant diligence</strong> in motion with StepStone, Hamilton Lane</li>
+        <li><strong>Portfolio halo mapping</strong> complete for Watco; beginning for Ports America, OTG</li>
+        <li><strong>Madrid trip</strong> anchored around the March family + Spanish infra-family network</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase-divider">
+    <div class="phase-divider-label">Phase 3</div>
+    <div class="phase-divider-title">The <em>12-month</em> picture</div>
+  </div>
+
+  <div class="metric-strip">
+    <div class="metric-cell"><div class="metric-label">TIF II</div><div class="metric-value"><em>First close</em> achieved</div></div>
+    <div class="metric-cell"><div class="metric-label">TCIP</div><div class="metric-value">Materially scaled from <em>FO channel</em></div></div>
+    <div class="metric-cell"><div class="metric-label">Role</div><div class="metric-value">Dennis as <em>established partner</em></div></div>
+  </div>
+
+  <div class="horizon-grid">
+    <div class="horizon-left">
+      <div class="horizon-when"><em>Year</em> 1</div>
+      <div class="horizon-phase">Momentum &amp; Scale</div>
+    </div>
+    <div class="horizon-right">
+      <div class="horizon-title">TIF II in motion, TCIP building</div>
+      <div class="horizon-sub">Capital formation operating at full cadence. My role broadening.</div>
+      <ul class="horizon-checklist">
+        <li><strong>TIF II first close</strong> &mdash; ADIA, GIC, APG, Washington/Michigan/CalSTRS re-ups plus new LPs</li>
+        <li>Target <strong>8&ndash;12 new LPs</strong> in the first close from the Push universe</li>
+        <li><strong>TCIP at meaningful scale</strong> from FO commitments &mdash; the distinct product finding its audience</li>
+        <li>Co-invest pipeline <strong>active and self-reinforcing</strong> &mdash; every deal brings new LP conversations</li>
+        <li><strong>Consultant approvals</strong> on the books for priority firms</li>
+        <li>My role beginning to <strong>expand beyond capital formation</strong> into deal origination (EU transport infra)</li>
+        <li>First <strong>strategic review</strong> with Emmett and Josh on what comes after TIF II</li>
+        <li>IR team <strong>expanded</strong> (one senior hire) to support the scaled cadence</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase-divider">
+    <div class="phase-divider-label">Phase 4</div>
+    <div class="phase-divider-title">The <em>3-year</em> picture</div>
+  </div>
+
+  <div class="horizon-grid">
+    <div class="horizon-left">
+      <div class="horizon-when"><em>Year</em> 3</div>
+      <div class="horizon-phase">Franchise Expansion</div>
+    </div>
+    <div class="horizon-right">
+      <div class="horizon-title">From capital formation to <em>strategic build</em></div>
+      <div class="horizon-sub">TIF II closed. TCIP is a real product. The three of us shaping what's next.</div>
+      <ul class="horizon-checklist wide">
+        <li><strong>TIF II fully closed</strong> at or above $2bn target &mdash; track record building</li>
+        <li><strong>TCIP scaled materially</strong> &mdash; perpetual capital vehicle becomes a distinctive Duration signature and a meaningful fee stream</li>
+        <li>Duration AUM <strong>approaching $8&ndash;10bn</strong> &mdash; the firm is materially larger than at spin-out</li>
+        <li><strong>Institutional LP base</strong> expanded from 32 to 60+ &mdash; far deeper and more diversified</li>
+        <li><strong>My partner role fully operational</strong> &mdash; capital formation, EU deal origination, firm-level strategy with Emmett and Josh</li>
+        <li><strong>European office</strong> evaluation &mdash; Geneva or London presence becomes strategic</li>
+        <li><strong>TIF III planning</strong> begins &mdash; the third vintage positioning to be the definitive US transport infra franchise</li>
+        <li><strong>Team expanded</strong> &mdash; IR team doubled; one or two mid-level investment professionals added on the origination side</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase-divider">
+    <div class="phase-divider-label">Phase 5</div>
+    <div class="phase-divider-title">The <em>5-year</em> picture</div>
+  </div>
+
+  <div class="horizon-grid">
+    <div class="horizon-left">
+      <div class="horizon-when"><em>Year</em> 5</div>
+      <div class="horizon-phase">Establishment</div>
+    </div>
+    <div class="horizon-right">
+      <div class="horizon-title">Duration as <em>category-defining</em></div>
+      <div class="horizon-sub">Past the first raise cycle. The franchise is the franchise.</div>
+      <ul class="horizon-checklist wide">
+        <li><strong>TIF III raising or raised</strong> &mdash; at meaningful step-up from TIF II (targeting $2.5&ndash;3bn+)</li>
+        <li><strong>TCIP at $3&ndash;5bn</strong> &mdash; the perpetual capital vehicle has scaled into a durable, compounding platform</li>
+        <li><strong>Duration AUM $12&ndash;15bn</strong> &mdash; firm has tripled from spin-out scale</li>
+        <li><strong>Adjacent product exploration</strong> &mdash; infrastructure credit? Transport-adjacent (logistics, mobility)? The institutional franchise can carry more product</li>
+        <li><strong>Permanent European presence</strong> established if the deal origination case proves out</li>
+        <li><strong>LP base includes</strong> a meaningful share of the world's largest institutional infra investors &mdash; ADIA, GIC, CPPIB, CDPQ, APG, PGGM, NPS, most major Canadian pensions, 30+ US pensions, 100+ FOs</li>
+        <li>Duration positioned as <strong>the</strong> independent US transportation infrastructure franchise</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase-divider">
+    <div class="phase-divider-label">Phase 6</div>
+    <div class="phase-divider-title">The <em>10-year</em> picture</div>
+  </div>
+
+  <div class="horizon-grid">
+    <div class="horizon-left">
+      <div class="horizon-when"><em>Year</em> 10</div>
+      <div class="horizon-phase">The Franchise</div>
+    </div>
+    <div class="horizon-right">
+      <div class="horizon-title">What we build, taken as <em>a given</em></div>
+      <div class="horizon-sub">The outcome, taken backwards. What does success actually look like?</div>
+      <ul class="horizon-checklist wide">
+        <li><strong>Duration AUM $20&ndash;30bn</strong> &mdash; roughly 4&ndash;6x the current base, sustained by compounding track record, perpetual capital, and institutional relationships</li>
+        <li><strong>Multiple vintages</strong> in-market &mdash; TIF IV / TIF V closed-end series, TCIP as the durable evergreen anchor, sector-adjacent products as relevant</li>
+        <li><strong>Global LP base</strong> across all major institutional pools and the leading FO universe &mdash; the LP list reads like a who's-who</li>
+        <li><strong>The team</strong> has next-generation leaders coming up the ranks &mdash; Duration is no longer a founder-dependent firm</li>
+        <li><strong>Deal origination</strong> is global &mdash; US remains the core but European and select Asia-Pacific deals are part of the book</li>
+        <li><strong>Reputation</strong> &mdash; when an FO or an institutional LP thinks about transportation infrastructure, Duration is the first call</li>
+        <li><strong>Succession and continuity</strong> thought through &mdash; Duration is built to last, which is the hallmark of truly great firms</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="phase-divider">
+    <div class="phase-divider-label">How to Use This</div>
+    <div class="phase-divider-title"><em>Working backwards</em> from the outcome</div>
+  </div>
+
+  <p class="body-text">The value of mapping 10 years out isn't that anything above year 3 is specific &mdash; it isn't, and it won't be. The value is that everything we do in the first 100 days should be <strong>compatible with</strong> and <strong>accretive toward</strong> the 10-year picture. Every LP relationship built in year 1 is a brick in a wall we're still building in year 10. Every decision on role, resourcing, product, and geography should be stress-tested against "does this get us closer to the 10-year Duration or further from it."</p>
+
+  <p class="body-text">We should own this horizon map together &mdash; revisit it annually, adjust with what we've learned, and make sure the immediate work is still lined up with where we're headed - to ensure that Duration becomes the durable franchise that I believe you both want it to become.</p>
+</section>
+</div>
+
+</div><!-- /wrap -->
+
+<footer class="page-footer">
+  <div class="footer-note">Capital Formation Notes &mdash; Working Draft &mdash; April 2026</div>
+  <div class="footer-conf">Confidential</div>
+</footer>
+
+<script>
+  // Main tab switching
+  (function() {
+    const buttons = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab');
+        buttons.forEach(b => b.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        const target = document.getElementById(targetId);
+        if (target) target.classList.add('active');
+        window.scrollTo({ top: document.querySelector('.tab-nav').offsetTop - 10, behavior: 'smooth' });
+      });
+    });
+  })();
+
+  // Family Office sub-tab switching
+  (function() {
+    const subButtons = document.querySelectorAll('.sub-btn');
+    const subPanels = document.querySelectorAll('.sub-panel');
+    subButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-sub');
+        subButtons.forEach(b => b.classList.remove('active'));
+        subPanels.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        const target = document.getElementById(targetId);
+        if (target) target.classList.add('active');
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
